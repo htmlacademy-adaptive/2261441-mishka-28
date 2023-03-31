@@ -51,7 +51,92 @@
   </header>
 
   <main class="main-container">
+    <h1 class="visually-hidden">"Мишка" - магазин вязаных вещей для дома и игрушек</h1>
 
+    <section class="hero">
+      <h2 class="visually-hidden">Ассортимент магазина</h2>
+      <img class="hero__image" src="img/hero/hero-mobile.jpg" width="320" height="373"
+        alt="Вязаные корзиночки на полках.">
+      <p class="hero__summary">Милые штуки <br> ручной <br> работы для дома</p>
+      <div class="hero__links-wrapper">
+        <a class="hero__link hero__link--interior">Предметы интерьера</a>
+        <a class="hero__link hero__link--toys">Детские игрушки</a>
+      </div>
+    </section>
+
+    <section class="featured-product">
+      <h2 class="featured-product__title">Товар недели</h2>
+      <article class="featured-product__item detailed-card">
+        <h3 class="detailed-card__title">Вязаные корзинки</h3>
+        <p class="detailed-card__description">Экологически чистая пряжа,
+          ручная работа. Доступны в шести расцветках и трёх размерах.</p>
+        <dl class="detailed-card__specs specs">
+          <dt class="specs__feature">Цвет:</dt>
+          <dd class="specs__value">тиффани/серый</dd>
+
+          <dt class="specs__feature">Диаметр:</dt>
+          <dd class="specs__value">25 см</dd>
+
+          <dt class="specs__feature">Высота:</dt>
+          <dd class="specs__value">15 см</dd>
+        </dl>
+        <img class="detailed-card__image" src="img/triple-set-mobile.jpg" width="260" height="315"
+          alt="Три вязаных корзиночки.">
+        <p class="detailed-card__price">Цена: 990 руб.</p>
+        <button class="detailed-card__button button" type="button">Заказать</button>
+      </article>
+    </section>
+
+    <section class="advantages">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+      <p class="advantages__intro">Коротко о нас:</p>
+      <ul class="advantages__list">
+        <li class="advantages__item advantages__item--eco-friendly">Экологически <br> чистые материалы</li>
+        <li class="advantages__item advantages__item--scandinavian-style">Скандинавский стиль <br> по российской цене
+        </li>
+        <li class="advantages__item advantages__item--likes">Увеличивает лайки <br> на фотографиях</li>
+        <li class="advantages__item advantages__item--hand-made">Связано вручную <br> с любовью и умилением</li>
+        <li class="advantages__item advantages__item--domestic-product">Поддержка отечественного производителя</li>
+        <li class="advantages__item advantages__item--gift-wrapped">Поставляется <br> в подарочной упаковке</li>
+      </ul>
+    </section>
+
+    <section class="customer-reviews">
+      <h2 class="customer-reviews__title">Отзывы</h2>
+      <div class="customer-reviews__wrapper slider">
+        <blockquote class="customer-reviews__item slider__item review">
+          <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+            лайков, как у популярных
+            инстамамочек.
+            В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+            и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+          </p>
+          <p class="review__author-name">Анастасия Красильникова<br><cite
+              class="review__author-email">@misssssiskras</cite></p>
+        </blockquote>
+        <div class="slider__button-wrapper">
+          <button class="slider__button slider__button--previous button" type="button"><span
+              class="visually-hidden">Предыдущий отзыв.</span></button>
+          <button class="slider__button slider__button--next button" type="button"><span
+              class="visually-hidden">Следующий
+              отзыв.</span></button>
+        </div>
+      </div>
+      <button class="customer-reviews__button button" type="button">Написать</button>
+    </section>
+
+    <section class="contacts">
+      <h2 class="contacts__title">Контакты</h2>
+      <address class="contacts__info contact-info">
+        <p class="contact-info__label">e-mail:</p>
+        <a class="contact-info__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        <p class="contact-info__label">адрес:</p>
+        <p class="contact-info__address">г. Санкт-Петербург <br> ул. Большая Конюшенная <br> д. 19/8, офис 101</p>
+      </address>
+      <img class="contacts__map" src="img/map.png" width="320" height="455"
+        alt="Магазин 'Мишка' на карте Санкт-Петербурга.">
+      <button class="contacts__button button" type="button">Напишите нам</button>
+    </section>
   </main>
 
   <footer class="main-footer">
@@ -103,6 +188,21 @@
     </a>
 
   </footer>
+
+  <div class="modal-container">
+    <div class="modal">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get">
+        <label class="modal__label" for="size">Выберите размер:</label>
+        <select class="modal__select select" name="size" id="size" multiple>
+          <option class="select__option" value="S">S</option>
+          <option class="select__option" value="M">M</option>
+          <option class="select__option" value="L">L</option>
+        </select>
+        <button class="modal__button" type="submit">Добавить</button>
+      </form>
+    </div>
+  </div>
 
 </body>
 
