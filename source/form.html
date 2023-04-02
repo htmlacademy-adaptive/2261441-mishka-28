@@ -52,6 +52,141 @@
 
   <main class="main-container">
 
+    <h1 class="page-title">Вязание на заказ</h1>
+
+    <section class="order">
+      <h2 class="visually-hidden">Форма для заказа вязаных вещей</h2>
+      <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+        свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="order__form order-form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="order-form__fieldset">
+          <legend class="fieldset__legend">Тип</legend>
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <label class="fieldset__control control">
+                <input class="visually-hidden control__input" type="radio" name="product-type"
+                  value="interior accessory" checked />
+                <span class="control__mark"></span>
+                <span class="control__label">Аксессуар для интерьера</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__control control">
+                <input class="visually-hidden control__input" type="radio" name="product-type" value="toy" />
+                <span class="control__mark"></span>
+                <span class="control__label">Детская игрушка</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="order-form__fieldset fieldset">
+          <legend class="fieldset__legend">Цвет</legend>
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <label class="fieldset__control control">
+                <input class="visually-hidden control__input" type="checkbox" name="white" checked />
+                <span class="control__mark"></span>
+                <span class="control__label">Белый</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__control control">
+                <input class="visually-hidden control__input" type="checkbox" name="grey" checked />
+                <span class="control__mark"></span>
+                <span class="control__label">Серый</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__control control">
+                <input class="visually-hidden control__input" type="checkbox" name="tiffany" />
+                <span class="control__mark"></span>
+                <span class="control__label">Тиффани</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__control control">
+                <input class="visually-hidden control__input" type="checkbox" name="black" />
+                <span class="control__mark"></span>
+                <span class="control__label">Черный</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__control control">
+                <input class="visually-hidden control__input" type="checkbox" name="pink" />
+                <span class="control__mark"></span>
+                <span class="control__label">Розовый</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__control control">
+                <input class="visually-hidden control__input" type="checkbox" name="orange" />
+                <span class="control__mark"></span>
+                <span class="control__label">Оранжевый</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="order-form__fieldset fieldset">
+          <legend class="fieldset__legend">ФИО</legend>
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <label class="fieldset__control control">
+                <span class="control__label">Имя:</span>
+                <input class="control__input" type="text" name="name" placeholder="Введите ваше имя*" />
+              </label>
+            </li>
+            <li>
+              <label class="fieldset__control control">
+                <span class="control__label">Фамилия:</span>
+                <input class="control__input" type="text" name="surname" placeholder="Укажите фамилию*" />
+              </label>
+            </li>
+            <li>
+              <label class="fieldset__control control">
+                <span class="control__label">Отчество:</span>
+                <input class="control__input" type="text" name="patronimic" placeholder="Отчество, если желаете" />
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="order-form__fieldset fieldset">
+          <legend class="fieldset__legend">Тел</legend>
+          <label class="fieldset__control control">
+            <span class="visually-hidden">Введите ваш телефон</span>
+            <input class="control__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+          </label>
+        </fieldset>
+
+        <fieldset class="order-form__fieldset fieldset">
+          <legend class="fieldset__legend">E-mail</legend>
+          <label class="fieldset__control control">
+            <span class="visually-hidden">Введите ваш e-mail</span>
+            <input class="control__input" type="email" name="email" placeholder="Ваш Email*">
+          </label>
+        </fieldset>
+
+        <fieldset class="order-form__fieldset fieldset">
+          <legend class="fieldset__legend">Доп</legend>
+          <label class="fieldset__control control">
+            <span class="visually-hidden">Опишите все ваши пожелания к заказу</span>
+            <textarea class="control__input" name="additional-requests" cols="30" rows="10"
+              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </label>
+        </fieldset>
+
+        <p class="order-form__footnote">
+          <small>
+            *Поля обязательны для заполнения
+          </small>
+        </p>
+
+        <button class="order-form__button button" type="submit">Отправить заказ</button>
+
+      </form>
+    </section>
   </main>
 
   <footer class="main-footer">
