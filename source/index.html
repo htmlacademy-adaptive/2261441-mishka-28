@@ -57,10 +57,10 @@
       <h2 class="visually-hidden">Ассортимент магазина</h2>
       <img class="hero__image" src="img/hero/hero-mobile.jpg" width="320" height="373"
         alt="Вязаные корзиночки на полках.">
-      <p class="hero__summary">Милые штуки <br> ручной <br> работы для дома</p>
+      <p class="hero__summary">Милые штуки ручной работы&nbsp;для&nbsp;дома</p>
       <div class="hero__links-wrapper">
-        <a class="hero__link hero__link--interior">Предметы интерьера</a>
-        <a class="hero__link hero__link--toys">Детские игрушки</a>
+        <a class="hero__link hero__link--interior" href="#">Предметы интерьера</a>
+        <a class="hero__link hero__link--toys" href="#">Детские игрушки</a>
       </div>
     </section>
 
@@ -91,29 +91,56 @@
       <h2 class="visually-hidden">Наши преимущества</h2>
       <p class="advantages__intro">Коротко о нас:</p>
       <ul class="advantages__list">
-        <li class="advantages__item advantages__item--eco-friendly">Экологически <br> чистые материалы</li>
-        <li class="advantages__item advantages__item--scandinavian-style">Скандинавский стиль <br> по российской цене
+        <li class="advantages__item advantages__item--eco-friendly">Экологически чистые материалы</li>
+        <li class="advantages__item advantages__item--scandinavian-style">Скандинавский стиль по российской цене
         </li>
-        <li class="advantages__item advantages__item--likes">Увеличивает лайки <br> на фотографиях</li>
-        <li class="advantages__item advantages__item--hand-made">Связано вручную <br> с любовью и умилением</li>
+        <li class="advantages__item advantages__item--likes">Увеличивает лайки на фотографиях</li>
+        <li class="advantages__item advantages__item--hand-made">Связано вручную с любовью и умилением</li>
         <li class="advantages__item advantages__item--domestic-product">Поддержка отечественного производителя</li>
-        <li class="advantages__item advantages__item--gift-wrapped">Поставляется <br> в подарочной упаковке</li>
+        <li class="advantages__item advantages__item--gift-wrapped">Поставляется в подарочной упаковке</li>
       </ul>
     </section>
 
     <section class="customer-reviews">
       <h2 class="customer-reviews__title">Отзывы</h2>
       <div class="customer-reviews__wrapper slider">
-        <blockquote class="customer-reviews__item slider__item review">
-          <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-            лайков, как у популярных
-            инстамамочек.
-            В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-            и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-          </p>
-          <p class="review__author-name">Анастасия Красильникова<br><cite
-              class="review__author-email">@misssssiskras</cite></p>
-        </blockquote>
+        <ol class="customer-reviews__list">
+          <li class="customer-reviews__item slider__item slider__item--current">
+            <blockquote class="review">
+              <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+                лайков, как у популярных
+                инстамамочек.
+                В отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+              </p>
+              <p class="review__author-name">Анастасия Красильникова<br><cite
+                  class="review__author-email">@misssssiskras</cite></p>
+            </blockquote>
+          </li>
+          <li class="customer-reviews__item slider__item">
+            <blockquote class="review">
+              <p class="review__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого
+                количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+                и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+                больше лайков!
+              </p>
+              <p class="review__author-name">Екатерина Красильникова<br><cite
+                  class="review__author-email">@misssssiskras2</cite></p>
+            </blockquote>
+          </li>
+          <li class="customer-reviews__item slider__item">
+            <blockquote class="review">
+              <p class="review__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко
+                такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
+                и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
+                больше лайков!
+              </p>
+              <p class="review__author-name">Елена Красильникова<br><cite
+                  class="review__author-email">@misssssiskras3</cite></p>
+            </blockquote>
+          </li>
+        </ol>
+
         <div class="slider__button-wrapper">
           <button class="slider__button slider__button--previous button" type="button"><span
               class="visually-hidden">Предыдущий отзыв.</span></button>
@@ -122,7 +149,7 @@
               отзыв.</span></button>
         </div>
       </div>
-      <button class="customer-reviews__button button" type="button">Написать</button>
+      <a class="customer-reviews__link button" href="#">Написать</a>
     </section>
 
     <section class="contacts">
@@ -135,7 +162,7 @@
       </address>
       <img class="contacts__map" src="img/map.png" width="320" height="455"
         alt="Магазин 'Мишка' на карте Санкт-Петербурга.">
-      <button class="contacts__button button" type="button">Напишите нам</button>
+      <a class="contacts__feedback-link button" href="#">Напишите нам</a>
     </section>
   </main>
 
@@ -193,12 +220,21 @@
     <div class="modal">
       <h2 class="modal__title">Добавить в корзину</h2>
       <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get">
-        <label class="modal__label" for="size">Выберите размер:</label>
-        <select class="modal__select select" name="size" id="size" multiple>
-          <option class="select__option" value="S">S</option>
-          <option class="select__option" value="M">M</option>
-          <option class="select__option" value="L">L</option>
-        </select>
+        <p class="modal__text">Выберите размер:</p>
+        <div class="modal__radio-group">
+          <label class="modal__control modal-control">
+            <input class="modal-control__input" type="radio" name="size" value="S">
+            <span class="modal-control__label button">S</span>
+          </label>
+          <label class="modal__control modal-control">
+            <input class="modal-control__input" type="radio" name="size" value="M">
+            <span class="modal-control__label button">M</span>
+          </label>
+          <label class="modal__control modal-control">
+            <input class="modal-control__input" type="radio" name="size" value="L">
+            <span class="modal-control__label button">L</span>
+          </label>
+        </div>
         <button class="modal__button" type="submit">Добавить</button>
       </form>
     </div>
