@@ -9,7 +9,7 @@
 <body class="page__body">
   <header class="main-header">
     <nav class="main-header__navigation navigation">
-      <a class="main-header__logo header-logo">
+      <a class="main-header__logo header-logo" href="index.html" title="На главную">
         <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'.">
       </a>
       <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
@@ -19,7 +19,7 @@
             <a class="site-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Вязание на заказ</a>
+            <a class="site-list__link">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="navigation__list user-list">
@@ -51,118 +51,141 @@
   </header>
 
   <main class="main-container">
-    <h1 class="visually-hidden">"Мишка" - магазин вязаных вещей для дома и игрушек</h1>
 
-    <section class="hero">
-      <h2 class="visually-hidden">Ассортимент магазина</h2>
-      <img class="hero__image" src="img/hero/hero-mobile.jpg" width="320" height="373"
-        alt="Вязаные корзиночки на полках.">
-      <p class="hero__summary">Милые штуки ручной работы&nbsp;для&nbsp;дома</p>
-      <div class="hero__links-wrapper">
-        <a class="hero__link hero__link--interior" href="#">Предметы интерьера</a>
-        <a class="hero__link hero__link--toys" href="#">Детские игрушки</a>
-      </div>
-    </section>
+    <h1 class="page-title">Вязание на заказ</h1>
 
-    <section class="featured-product">
-      <h2 class="featured-product__title">Товар недели</h2>
-      <article class="featured-product__item detailed-card">
-        <h3 class="detailed-card__title">Вязаные корзинки</h3>
-        <p class="detailed-card__description">Экологически чистая пряжа,
-          ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-        <dl class="detailed-card__specs specs">
-          <dt class="specs__feature">Цвет:</dt>
-          <dd class="specs__value">тиффани/серый</dd>
+    <section class="order">
+      <h2 class="visually-hidden">Форма для заказа вязаных вещей</h2>
+      <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
+        свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="order__form order-form" action="https://echo.htmlacademy.ru/" method="get">
+        <fieldset class="order-form__fieldset fieldset">
+          <legend class="fieldset__legend">Тип</legend>
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <label class="fieldset__control control">
+                <input class="visually-hidden control__input" type="radio" name="product-type"
+                  value="interior accessory" checked />
+                <span class="control__mark"></span>
+                <span class="control__label">Аксессуар для интерьера</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__control control">
+                <input class="visually-hidden control__input" type="radio" name="product-type" value="toy" />
+                <span class="control__mark"></span>
+                <span class="control__label">Детская игрушка</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
 
-          <dt class="specs__feature">Диаметр:</dt>
-          <dd class="specs__value">25 см</dd>
+        <fieldset class="order-form__fieldset fieldset">
+          <legend class="fieldset__legend">Цвет</legend>
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <label class="fieldset__control control">
+                <input class="visually-hidden control__input" type="checkbox" name="white" checked />
+                <span class="control__mark"></span>
+                <span class="control__label">Белый</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__control control">
+                <input class="visually-hidden control__input" type="checkbox" name="grey" checked />
+                <span class="control__mark"></span>
+                <span class="control__label">Серый</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__control control">
+                <input class="visually-hidden control__input" type="checkbox" name="tiffany" />
+                <span class="control__mark"></span>
+                <span class="control__label">Тиффани</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__control control">
+                <input class="visually-hidden control__input" type="checkbox" name="black" />
+                <span class="control__mark"></span>
+                <span class="control__label">Черный</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__control control">
+                <input class="visually-hidden control__input" type="checkbox" name="pink" />
+                <span class="control__mark"></span>
+                <span class="control__label">Розовый</span>
+              </label>
+            </li>
+            <li class="fieldset__item">
+              <label class="fieldset__control control">
+                <input class="visually-hidden control__input" type="checkbox" name="orange" />
+                <span class="control__mark"></span>
+                <span class="control__label">Оранжевый</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
 
-          <dt class="specs__feature">Высота:</dt>
-          <dd class="specs__value">15 см</dd>
-        </dl>
-        <img class="detailed-card__image" src="img/triple-set-mobile.jpg" width="260" height="315"
-          alt="Три вязаных корзиночки.">
-        <p class="detailed-card__price">Цена: 990 руб.</p>
-        <button class="detailed-card__button button" type="button">Заказать</button>
-      </article>
-    </section>
+        <fieldset class="order-form__fieldset fieldset">
+          <legend class="fieldset__legend">ФИО</legend>
+          <ul class="fieldset__list">
+            <li class="fieldset__item">
+              <label class="fieldset__control control">
+                <span class="control__label">Имя:</span>
+                <input class="control__input" type="text" name="name" placeholder="Введите ваше имя*" required />
+              </label>
+            </li>
+            <li>
+              <label class="fieldset__control control">
+                <span class="control__label">Фамилия:</span>
+                <input class="control__input" type="text" name="surname" placeholder="Укажите фамилию*" required />
+              </label>
+            </li>
+            <li>
+              <label class="fieldset__control control">
+                <span class="control__label">Отчество:</span>
+                <input class="control__input" type="text" name="patronimic" placeholder="Отчество, если желаете" />
+              </label>
+            </li>
+          </ul>
+        </fieldset>
 
-    <section class="advantages">
-      <h2 class="visually-hidden">Наши преимущества</h2>
-      <p class="advantages__intro">Коротко о нас:</p>
-      <ul class="advantages__list">
-        <li class="advantages__item advantages__item--eco-friendly">Экологически чистые материалы</li>
-        <li class="advantages__item advantages__item--scandinavian-style">Скандинавский стиль по российской цене
-        </li>
-        <li class="advantages__item advantages__item--likes">Увеличивает лайки на фотографиях</li>
-        <li class="advantages__item advantages__item--hand-made">Связано вручную с любовью и умилением</li>
-        <li class="advantages__item advantages__item--domestic-product">Поддержка отечественного производителя</li>
-        <li class="advantages__item advantages__item--gift-wrapped">Поставляется в подарочной упаковке</li>
-      </ul>
-    </section>
+        <fieldset class="order-form__fieldset fieldset">
+          <legend class="fieldset__legend">Тел</legend>
+          <label class="fieldset__control control">
+            <span class="visually-hidden">Введите ваш телефон</span>
+            <input class="control__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+          </label>
+        </fieldset>
 
-    <section class="customer-reviews">
-      <h2 class="customer-reviews__title">Отзывы</h2>
-      <div class="customer-reviews__wrapper slider">
-        <ol class="customer-reviews__list">
-          <li class="customer-reviews__item slider__item slider__item--current">
-            <blockquote class="review">
-              <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
-                лайков, как у популярных
-                инстамамочек.
-                В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-                и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-              </p>
-              <p class="review__author-name">Анастасия Красильникова<br><cite
-                  class="review__author-email">@misssssiskras</cite></p>
-            </blockquote>
-          </li>
-          <li class="customer-reviews__item slider__item">
-            <blockquote class="review">
-              <p class="review__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого
-                количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
-                и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
-                больше лайков!
-              </p>
-              <p class="review__author-name">Екатерина Красильникова<br><cite
-                  class="review__author-email">@misssssiskras2</cite></p>
-            </blockquote>
-          </li>
-          <li class="customer-reviews__item slider__item">
-            <blockquote class="review">
-              <p class="review__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко
-                такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
-                и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
-                больше лайков!
-              </p>
-              <p class="review__author-name">Елена Красильникова<br><cite
-                  class="review__author-email">@misssssiskras3</cite></p>
-            </blockquote>
-          </li>
-        </ol>
+        <fieldset class="order-form__fieldset fieldset">
+          <legend class="fieldset__legend">E-mail</legend>
+          <label class="fieldset__control control">
+            <span class="visually-hidden">Введите ваш e-mail</span>
+            <input class="control__input" type="email" name="email" placeholder="Ваш Email*" required>
+          </label>
+        </fieldset>
 
-        <div class="slider__button-wrapper">
-          <button class="slider__button slider__button--previous button" type="button"><span
-              class="visually-hidden">Предыдущий отзыв.</span></button>
-          <button class="slider__button slider__button--next button" type="button"><span
-              class="visually-hidden">Следующий
-              отзыв.</span></button>
-        </div>
-      </div>
-      <a class="customer-reviews__link button" href="#">Написать</a>
-    </section>
+        <fieldset class="order-form__fieldset fieldset">
+          <legend class="fieldset__legend">Доп</legend>
+          <label class="fieldset__control control">
+            <span class="visually-hidden">Опишите все ваши пожелания к заказу</span>
+            <textarea class="control__input" name="additional-requests" cols="30" rows="10"
+              placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </label>
+        </fieldset>
 
-    <section class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <address class="contacts__info contact-info">
-        <p class="contact-info__label">e-mail:</p>
-        <a class="contact-info__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-        <p class="contact-info__label">адрес:</p>
-        <p class="contact-info__address">г. Санкт-Петербург <br> ул. Большая Конюшенная <br> д. 19/8, офис 101</p>
-      </address>
-      <img class="contacts__map" src="img/map.png" width="320" height="455"
-        alt="Магазин 'Мишка' на карте Санкт-Петербурга.">
-      <a class="contacts__feedback-link button" href="#">Напишите нам</a>
+        <p class="order-form__footnote">
+          <small>
+            *Поля обязательны для заполнения
+          </small>
+        </p>
+
+        <button class="order-form__button button" type="submit">Отправить заказ</button>
+
+      </form>
     </section>
   </main>
 
@@ -215,30 +238,6 @@
     </a>
 
   </footer>
-
-  <div class="modal-container">
-    <div class="modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
-      <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get">
-        <p class="modal__text">Выберите размер:</p>
-        <div class="modal__radio-group">
-          <label class="modal__control modal-control">
-            <input class="modal-control__input" type="radio" name="size" value="S">
-            <span class="modal-control__label button">S</span>
-          </label>
-          <label class="modal__control modal-control">
-            <input class="modal-control__input" type="radio" name="size" value="M">
-            <span class="modal-control__label button">M</span>
-          </label>
-          <label class="modal__control modal-control">
-            <input class="modal-control__input" type="radio" name="size" value="L">
-            <span class="modal-control__label button">L</span>
-          </label>
-        </div>
-        <button class="modal__button" type="submit">Добавить</button>
-      </form>
-    </div>
-  </div>
 
 </body>
 
