@@ -1,0 +1,50 @@
+.modal {
+  .grid-4;
+  padding-top: 28px;
+  padding-bottom: 46px;
+}
+
+.modal__title {
+  .text-reset;
+  .text(25px, 30px, 700);
+  text-transform: uppercase;
+  text-align: center;
+  grid-column: 2/-2;
+  margin-bottom: 14px;
+}
+
+.modal__form {
+  grid-column: 2/-2;
+}
+
+.modal__text {
+  .text-reset;
+  .text(15px, 30px, @brown);
+  text-align: center;
+}
+
+.modal__radio-group {
+  display: flex;
+  gap: 7px;
+  margin-bottom: 31px;
+}
+
+.modal__control {
+  flex-grow: 1;
+}
+
+.modal-control__input {
+  appearance: none;
+}
+
+.modal-control__label {
+  .text(17px, 16px, 700, @brown);
+  border: 2px solid rgba(68, 68, 68, 0.1)
+}
+
+.modal__button {
+  .text(17px, 16px, 700, @white);
+  background-color: @green;
+  width: 100%;
+  border: none;
+}
