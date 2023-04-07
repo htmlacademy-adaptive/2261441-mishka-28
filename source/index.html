@@ -4,15 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <nav class="main-header__navigation navigation">
-      <a class="main-header__logo header-logo">
-        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'.">
-      </a>
-      <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
+      <div class="navigation__wrapper">
+        <a class="navigation__logo header-logo">
+          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'.">
+        </a>
+        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
+      </div>
       <div class="navigation__wrapper">
         <ul class="navigation__list site-list">
           <li class="site-list__item">
@@ -205,7 +208,7 @@
     </ul>
 
     <a class="main-footer__copyright copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-      <b class="copyright-link__text">Разработано <span class="visually-hidden">в HTML academy.</span></b>
+      <p class="copyright-link__text">Разработано <span class="visually-hidden">в HTML academy.</span></p>
       <svg class="copyright-link__icon" aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35"
         fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -235,7 +238,7 @@
             <span class="modal-control__label button">L</span>
           </label>
         </div>
-        <button class="modal__button" type="submit">Добавить</button>
+        <button class="modal__button button" type="submit">Добавить</button>
       </form>
     </div>
   </div>
