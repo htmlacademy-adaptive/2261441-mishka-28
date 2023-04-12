@@ -1,7 +1,7 @@
 // Миксины и переменные
 
-@import "variables.less";
-@import "mixins.less";
+@import "utils/variables.less";
+@import "utils/mixins.less";
 
 // Базовые стили
 
@@ -11,13 +11,15 @@
 
 // Блоки
 
-@import "blocks/main-header/main-header.less";
-@import "blocks//main-header/navigation.less";
-@import "blocks//main-header/site-list.less";
-@import "blocks/main-header/user-list.less";
-
-
+@import "blocks/page.less";
 @import "blocks/button.less";
+
+// Header
+
+@import "blocks/main-header/main-header.less";
+@import "blocks/main-header/navigation.less";
+@import "blocks/main-header/site-list.less";
+@import "blocks/main-header/user-list.less";
 
 // Footer
 
@@ -26,6 +28,7 @@
 @import "blocks/main-footer/copyright-link.less";
 
 // Main-container
+
 @import "blocks/main-container.less";
 
 // Index
@@ -35,6 +38,8 @@
 @import "blocks/index/detailed-card.less";
 @import "blocks/index/advantages.less";
 @import "blocks/index/customer-reviews.less";
+@import "blocks/index/review.less";
+@import "blocks/index/slider.less";
 @import "blocks/index/contacts.less";
 
 // Modal
