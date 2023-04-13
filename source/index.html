@@ -4,15 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <nav class="main-header__navigation navigation">
-      <a class="main-header__logo header-logo">
-        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'.">
-      </a>
-      <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
+      <div class="navigation__wrapper">
+        <a class="navigation__logo header-logo">
+          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'.">
+        </a>
+        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
+      </div>
       <div class="navigation__wrapper">
         <ul class="navigation__list site-list">
           <li class="site-list__item">
@@ -53,7 +56,7 @@
   <main class="main-container">
     <h1 class="visually-hidden">"Мишка" - магазин вязаных вещей для дома и игрушек</h1>
 
-    <section class="hero">
+    <section class="main-container__hero hero">
       <h2 class="visually-hidden">Ассортимент магазина</h2>
       <img class="hero__image" src="img/hero/hero-mobile.jpg" width="320" height="373"
         alt="Вязаные корзиночки на полках.">
@@ -64,7 +67,7 @@
       </div>
     </section>
 
-    <section class="featured-product">
+    <section class="main-container__featured-product featured-product">
       <h2 class="featured-product__title">Товар недели</h2>
       <article class="featured-product__item detailed-card">
         <h3 class="detailed-card__title">Вязаные корзинки</h3>
@@ -87,7 +90,7 @@
       </article>
     </section>
 
-    <section class="advantages">
+    <section class="main-container__advantages advantages">
       <h2 class="visually-hidden">Наши преимущества</h2>
       <p class="advantages__intro">Коротко о нас:</p>
       <ul class="advantages__list">
@@ -101,7 +104,7 @@
       </ul>
     </section>
 
-    <section class="customer-reviews">
+    <section class="main-container__customer-reviews customer-reviews">
       <h2 class="customer-reviews__title">Отзывы</h2>
       <div class="customer-reviews__wrapper slider">
         <ol class="customer-reviews__list">
@@ -152,7 +155,7 @@
       <a class="customer-reviews__link button" href="#">Написать</a>
     </section>
 
-    <section class="contacts">
+    <section class="main-container__contacts contacts">
       <h2 class="contacts__title">Контакты</h2>
       <address class="contacts__info contact-info">
         <p class="contact-info__label">e-mail:</p>
@@ -160,7 +163,7 @@
         <p class="contact-info__label">адрес:</p>
         <p class="contact-info__address">г. Санкт-Петербург <br> ул. Большая Конюшенная <br> д. 19/8, офис 101</p>
       </address>
-      <img class="contacts__map" src="img/map.png" width="320" height="455"
+      <img class="contacts__map" src="img/map.jpg" width="320" height="455"
         alt="Магазин 'Мишка' на карте Санкт-Петербурга.">
       <a class="contacts__feedback-link button" href="#">Напишите нам</a>
     </section>
@@ -205,7 +208,7 @@
     </ul>
 
     <a class="main-footer__copyright copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-      <b class="copyright-link__text">Разработано <span class="visually-hidden">в HTML academy.</span></b>
+      <p class="copyright-link__text">Разработано <span class="visually-hidden">в HTML academy.</span></p>
       <svg class="copyright-link__icon" aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35"
         fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
@@ -218,12 +221,12 @@
 
   <div class="modal-container">
     <div class="modal">
-      <h2 class="modal__title">Добавить в корзину</h2>
+      <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
       <form class="modal__form" action="https://echo.htmlacademy.ru/" method="get">
         <p class="modal__text">Выберите размер:</p>
         <div class="modal__radio-group">
           <label class="modal__control modal-control">
-            <input class="modal-control__input" type="radio" name="size" value="S">
+            <input class="modal-control__input" type="radio" name="size" value="S" checked>
             <span class="modal-control__label button">S</span>
           </label>
           <label class="modal__control modal-control">
@@ -235,7 +238,7 @@
             <span class="modal-control__label button">L</span>
           </label>
         </div>
-        <button class="modal__button" type="submit">Добавить</button>
+        <button class="modal__button button" type="submit">Добавить</button>
       </form>
     </div>
   </div>

@@ -4,15 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <nav class="main-header__navigation navigation">
-      <a class="main-header__logo header-logo" href="index.html" title="На главную">
-        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'.">
-      </a>
-      <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
+      <div class="navigation__wrapper">
+        <a class="main-header__logo header-logo" href="index.html" title="На главную">
+          <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'.">
+        </a>
+        <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
+      </div>
       <div class="navigation__wrapper">
         <ul class="navigation__list site-list">
           <li class="site-list__item">
@@ -51,27 +54,28 @@
   </header>
 
   <main class="main-container">
+    <div class="main-container__title main-container__title--form">
+      <h1 class="page-title">Вязание на заказ</h1>
+    </div>
 
-    <h1 class="page-title">Вязание на заказ</h1>
-
-    <section class="order">
+    <section class="main-container__order order">
       <h2 class="visually-hidden">Форма для заказа вязаных вещей</h2>
       <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
         свяжемся с вами, чтобы уточнить детали.</p>
       <form class="order__form order-form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="order-form__fieldset fieldset">
-          <legend class="fieldset__legend">Тип</legend>
-          <ul class="fieldset__list">
-            <li class="fieldset__item">
-              <label class="fieldset__control control">
+        <fieldset class="order-form__fieldset">
+          <legend class="order-form__legend">Тип</legend>
+          <ul class="order-form__list">
+            <li class="order-form__item">
+              <label class="order-form__control control">
                 <input class="visually-hidden control__input" type="radio" name="product-type"
                   value="interior accessory" checked />
                 <span class="control__mark"></span>
                 <span class="control__label">Аксессуар для интерьера</span>
               </label>
             </li>
-            <li class="fieldset__item">
-              <label class="fieldset__control control">
+            <li class="order-form__item">
+              <label class="order-form__control control">
                 <input class="visually-hidden control__input" type="radio" name="product-type" value="toy" />
                 <span class="control__mark"></span>
                 <span class="control__label">Детская игрушка</span>
@@ -80,46 +84,46 @@
           </ul>
         </fieldset>
 
-        <fieldset class="order-form__fieldset fieldset">
-          <legend class="fieldset__legend">Цвет</legend>
-          <ul class="fieldset__list">
-            <li class="fieldset__item">
-              <label class="fieldset__control control">
+        <fieldset class="order-form__fieldset">
+          <legend class="order-form__legend">Цвет</legend>
+          <ul class="order-form__list">
+            <li class="order-form__item">
+              <label class="order-form__control control">
                 <input class="visually-hidden control__input" type="checkbox" name="white" checked />
                 <span class="control__mark"></span>
                 <span class="control__label">Белый</span>
               </label>
             </li>
-            <li class="fieldset__item">
-              <label class="fieldset__control control">
+            <li class="order-form__item">
+              <label class="order-form__control control">
                 <input class="visually-hidden control__input" type="checkbox" name="grey" checked />
                 <span class="control__mark"></span>
                 <span class="control__label">Серый</span>
               </label>
             </li>
-            <li class="fieldset__item">
-              <label class="fieldset__control control">
+            <li class="order-form__item">
+              <label class="order-form__control control">
                 <input class="visually-hidden control__input" type="checkbox" name="tiffany" />
                 <span class="control__mark"></span>
                 <span class="control__label">Тиффани</span>
               </label>
             </li>
-            <li class="fieldset__item">
-              <label class="fieldset__control control">
+            <li class="order-form__item">
+              <label class="order-form__control control">
                 <input class="visually-hidden control__input" type="checkbox" name="black" />
                 <span class="control__mark"></span>
                 <span class="control__label">Черный</span>
               </label>
             </li>
-            <li class="fieldset__item">
-              <label class="fieldset__control control">
+            <li class="order-form__item">
+              <label class="order-form__control control">
                 <input class="visually-hidden control__input" type="checkbox" name="pink" />
                 <span class="control__mark"></span>
                 <span class="control__label">Розовый</span>
               </label>
             </li>
-            <li class="fieldset__item">
-              <label class="fieldset__control control">
+            <li class="order-form__item">
+              <label class="order-form__control control">
                 <input class="visually-hidden control__input" type="checkbox" name="orange" />
                 <span class="control__mark"></span>
                 <span class="control__label">Оранжевый</span>
@@ -128,23 +132,23 @@
           </ul>
         </fieldset>
 
-        <fieldset class="order-form__fieldset fieldset">
-          <legend class="fieldset__legend">ФИО</legend>
-          <ul class="fieldset__list">
-            <li class="fieldset__item">
-              <label class="fieldset__control control">
+        <fieldset class="order-form__fieldset">
+          <legend class="order-form__legend">ФИО</legend>
+          <ul class="order-form__list">
+            <li class="order-form__item">
+              <label class="order-form__control control">
                 <span class="control__label">Имя:</span>
                 <input class="control__input" type="text" name="name" placeholder="Введите ваше имя*" required />
               </label>
             </li>
             <li>
-              <label class="fieldset__control control">
+              <label class="order-form__control control">
                 <span class="control__label">Фамилия:</span>
                 <input class="control__input" type="text" name="surname" placeholder="Укажите фамилию*" required />
               </label>
             </li>
             <li>
-              <label class="fieldset__control control">
+              <label class="order-form__control control">
                 <span class="control__label">Отчество:</span>
                 <input class="control__input" type="text" name="patronimic" placeholder="Отчество, если желаете" />
               </label>
@@ -152,27 +156,27 @@
           </ul>
         </fieldset>
 
-        <fieldset class="order-form__fieldset fieldset">
-          <legend class="fieldset__legend">Тел</legend>
-          <label class="fieldset__control control">
+        <fieldset class="order-form__fieldset">
+          <legend class="order-form__legend">Тел</legend>
+          <label class="order-form__control control">
             <span class="visually-hidden">Введите ваш телефон</span>
             <input class="control__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
           </label>
         </fieldset>
 
-        <fieldset class="order-form__fieldset fieldset">
-          <legend class="fieldset__legend">E-mail</legend>
-          <label class="fieldset__control control">
+        <fieldset class="order-form__fieldset">
+          <legend class="order-form__legend">E-mail</legend>
+          <label class="order-form__control control">
             <span class="visually-hidden">Введите ваш e-mail</span>
             <input class="control__input" type="email" name="email" placeholder="Ваш Email*" required>
           </label>
         </fieldset>
 
-        <fieldset class="order-form__fieldset fieldset">
-          <legend class="fieldset__legend">Доп</legend>
-          <label class="fieldset__control control">
+        <fieldset class="order-form__fieldset">
+          <legend class="order-form__legend">Доп</legend>
+          <label class="order-form__control control">
             <span class="visually-hidden">Опишите все ваши пожелания к заказу</span>
-            <textarea class="control__input" name="additional-requests" cols="30" rows="10"
+            <textarea class="control__input control__input--textarea" name="additional-requests"
               placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </label>
         </fieldset>
@@ -228,7 +232,7 @@
     </ul>
 
     <a class="main-footer__copyright copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
-      <b class="copyright-link__text">Разработано <span class="visually-hidden">в HTML academy.</span></b>
+      <p class="copyright-link__text">Разработано <span class="visually-hidden">в HTML academy.</span></p>
       <svg class="copyright-link__icon" aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35"
         fill="none" xmlns="http://www.w3.org/2000/svg">
         <path

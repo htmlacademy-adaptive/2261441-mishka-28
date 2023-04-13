@@ -1,0 +1,38 @@
+// Сброс стилей для списков
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.list-item-reset {
+  display: block;
+}
+
+.link-reset {
+  display: block;
+  text-decoration: none;
+}
+
+.text (@size; @height; @weight: 400; @color: @black) {
+  font-size: @size;
+  line-height: @height;
+  font-weight: @weight;
+  color: @color;
+}
+
+.text-reset {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: 30px 1fr 1fr 30px;
+}

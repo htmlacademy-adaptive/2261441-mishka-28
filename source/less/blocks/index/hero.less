@@ -1,0 +1,46 @@
+.hero {
+  .grid-4;
+  position: relative;
+}
+
+.hero__image {
+  grid-column: 1/-1;
+}
+
+.hero__summary {
+  .text-reset;
+  grid-column: 2/-2;
+  position: absolute;
+  top: 79px;
+  .text(27px,30px,700);
+  text-align: center;
+}
+
+.hero__links-wrapper {
+  grid-column: 1/-1;
+  position: relative;
+  bottom: 72px;
+}
+
+.hero__link {
+  .link-reset;
+  .text(19px, 24px, 700, @white);
+  width: 100%;
+  min-height: 103px;
+  padding: 24px 160px 31px 30px;
+
+  &--interior {
+    background-color: @green;
+    background-image: url("../img/hero/interior.svg");
+    background-repeat: no-repeat;
+    background-position: top 23px right 36px;
+  }
+
+  &--toys {
+    background-color: @dark-green;
+    background-image: url("../img/hero/toy.svg");
+    background-repeat: no-repeat;
+    background-position: top 21px right 27px;
+  }
+}
+
