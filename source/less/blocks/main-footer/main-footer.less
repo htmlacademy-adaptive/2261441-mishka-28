@@ -7,5 +7,19 @@
   justify-content: center;
   align-items: center;
   min-height: 160px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+    min-height: 143px;
+  }
 }
 
+.main-footer__logo {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
