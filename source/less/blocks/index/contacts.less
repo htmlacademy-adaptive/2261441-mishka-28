@@ -1,5 +1,14 @@
 .contacts {
+  position: relative;
   .grid-4;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 50px 1fr 1fr 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    .grid-8;
+  }
 }
 
 .contacts__title {
@@ -7,6 +16,10 @@
   .text(25px, 30px, 700);
   grid-column: 2/-2;
   margin-bottom: 28px;
+
+  @media (min-width: @desktop-width) {
+    grid-column: 3/5;
+  }
 }
 
 .contacts__info {
@@ -14,14 +27,39 @@
   font-style: normal;
   grid-column: 2/-2;
   margin-bottom: 62px;
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: flex;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 3/5;
+  }
 }
 
 .contacts__map {
-  grid-column: 2/-2;
+  grid-column: 1/-1;
+
+  @media (min-width: @desktop-width) {
+    grid-column: 5/-1;
+  }
 }
 
 .contacts__feedback-link {
   .link-reset;
   grid-column: 2/-2;
+
+  @media (min-width: @tablet-width) {
+    width: 230px;
+    font-size: 17px;
+    margin: 71px auto 73px auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 3/5;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
 }
 

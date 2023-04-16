@@ -1,5 +1,17 @@
 .customer-reviews {
   .grid-4;
+  position: relative;
+
+  @media (min-width: @tablet-width) {
+    .grid-6;
+    background-image: url("../img/reviews/review.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+  }
+
+  @media (min-width: @desktop-width) {
+    .grid-8;
+  }
 }
 
 .customer-reviews__title {
@@ -10,6 +22,10 @@
 
 .customer-reviews__wrapper {
   grid-column: 2/-2;
+
+  @media (min-width: @desktop-width) {
+    grid-column: 3/-2;
+  }
 }
 
 .customer-reviews__list {
@@ -20,4 +36,10 @@
   .link-reset;
   grid-column: 2/-2;
   margin-bottom: 45px;
+
+  @media (min-width: @tablet-width) {
+    grid-column: -3/-2;
+    min-width: 175px;
+    position: absolute;
+  }
 }

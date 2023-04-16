@@ -1,6 +1,14 @@
 .hero {
   .grid-4;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    .grid-6;
+  }
+
+  @media (min-width: @desktop-width) {
+    .grid-8;
+  }
 }
 
 .hero__image {
@@ -9,17 +17,33 @@
 
 .hero__summary {
   .text-reset;
+  .text(27px,30px,700);
   grid-column: 2/-2;
   position: absolute;
-  top: 79px;
-  .text(27px,30px,700);
+  top: 90px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    .text(43px, 50px, 700);
+    top: 155px;
+    grid-column: 3/-3;
+  }
+
+  @media (min-width: @desktop-width) {
+    .text(53px, 57px, 700);
+    top: 158px;
+  }
 }
 
 .hero__links-wrapper {
   grid-column: 1/-1;
   position: relative;
   bottom: 72px;
+
+  @media (min-width: @tablet-width) {
+    grid-column: 2/-2;
+    display: flex;
+  }
 }
 
 .hero__link {
@@ -28,6 +52,17 @@
   width: 100%;
   min-height: 103px;
   padding: 24px 160px 31px 30px;
+
+  @media (min-width: @tablet-width) {
+    .text(20px, 30px, 700, @white);
+    min-height: 119px;
+    padding: 25px 167px 34px 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 350px;
+  }
+
 
   &--interior {
     background-color: @green;

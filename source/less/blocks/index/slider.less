@@ -1,7 +1,17 @@
+.slider {
+  position: relative;
+}
+
 .slider__button-wrapper {
-  grid-column: 2/-2;
   display: flex;
   margin-bottom: 38px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 175px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 }
 
 .slider__button {

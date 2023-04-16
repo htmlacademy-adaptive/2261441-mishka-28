@@ -1,16 +1,36 @@
 .advantages {
   .grid-4;
+
+  @media (min-width: @tablet-width) {
+    .grid-6;
+  }
+
+  @media (min-width: @desktop-width) {
+    .grid-8;
+  }
 }
 
 .advantages__intro {
   grid-column: 2/-2;
   .text-reset;
   .text(25px, 30px, 700);
+
+  @media (min-width: @desktop-width) {
+    grid-column: 3/-3;
+  }
 }
 
 .advantages__list {
   .list-reset;
   grid-column: 2/-2;
+
+  @media (min-width: @tablet-width) {
+    column-count: 2;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 3/-3;
+  }
 }
 
 .advantages__item {
