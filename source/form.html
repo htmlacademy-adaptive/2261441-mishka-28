@@ -69,8 +69,8 @@
       <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы
         свяжемся с вами, чтобы уточнить детали.</p>
       <form class="order__form order-form" action="https://echo.htmlacademy.ru/" method="get">
-        <fieldset class="order-form__fieldset">
-          <legend class="order-form__legend">Тип</legend>
+        <div class="order-form__fieldset" role="group" aria-labelledby="pseudolegend">
+          <div class="order-form__legend" id="pseudolegend">Тип</div>
           <ul class="order-form__list">
             <li class="order-form__item">
               <label class="order-form__control control">
@@ -88,11 +88,11 @@
               </label>
             </li>
           </ul>
-        </fieldset>
+        </div>
 
-        <fieldset class="order-form__fieldset">
-          <legend class="order-form__legend">Цвет</legend>
-          <ul class="order-form__list">
+        <div class="order-form__fieldset order-form__fieldset--grey" role="group" aria-labelledby="pseudolegend">
+          <div class="order-form__legend" id="pseudolegend">Цвет</div>
+          <ul class="order-form__list order-form__list--columns">
             <li class="order-form__item">
               <label class="order-form__control control">
                 <input class="visually-hidden control__input" type="checkbox" name="white" checked />
@@ -136,10 +136,10 @@
               </label>
             </li>
           </ul>
-        </fieldset>
+        </div>
 
-        <fieldset class="order-form__fieldset">
-          <legend class="order-form__legend">ФИО</legend>
+        <div class="order-form__fieldset" role="group" aria-labelledby="pseudolegend">
+          <div class="order-form__legend" id="pseudolegend">ФИО</div>
           <ul class="order-form__list">
             <li class="order-form__item">
               <label class="order-form__control control">
@@ -160,41 +160,48 @@
               </label>
             </li>
           </ul>
-        </fieldset>
+        </div>
 
-        <fieldset class="order-form__fieldset">
-          <legend class="order-form__legend">Тел</legend>
-          <label class="order-form__control control">
-            <span class="visually-hidden">Введите ваш телефон</span>
-            <input class="control__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-          </label>
-        </fieldset>
+        <div class="order-form__fieldset order-form__fieldset--grey" role="group" aria-labelledby="pseudolegend">
+          <div class="order-form__legend" id="pseudolegend">Тел</div>
+          <div class="order-form__input-wrapper">
+            <label class="order-form__control control">
+              <span class="visually-hidden">Введите ваш телефон</span>
+              <input class="control__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            </label>
+          </div>
+        </div>
 
-        <fieldset class="order-form__fieldset">
-          <legend class="order-form__legend">E-mail</legend>
-          <label class="order-form__control control">
-            <span class="visually-hidden">Введите ваш e-mail</span>
-            <input class="control__input" type="email" name="email" placeholder="Ваш Email*" required>
-          </label>
-        </fieldset>
+        <div class="order-form__fieldset order-form__fieldset--grey" role="group" aria-labelledby="pseudolegend">
+          <div class="order-form__legend" id="pseudolegend">E-mail</div>
+          <div class="order-form__input-wrapper">
+            <label class="order-form__control control">
+              <span class="visually-hidden">Введите ваш e-mail</span>
+              <input class="control__input" type="email" name="email" placeholder="Ваш Email*" required>
+            </label>
+          </div>
+        </div>
 
-        <fieldset class="order-form__fieldset">
-          <legend class="order-form__legend">Доп</legend>
-          <label class="order-form__control control">
-            <span class="visually-hidden">Опишите все ваши пожелания к заказу</span>
-            <textarea class="control__input control__input--textarea" name="additional-requests"
-              placeholder="Опишите все ваши пожелания к заказу"></textarea>
-          </label>
-        </fieldset>
+        <div class="order-form__fieldset" role="group" aria-labelledby="pseudolegend">
+          <div class="order-form__legend" id="pseudolegend">Доп</div>
+          <div class="order-form__input-wrapper">
+            <label class="order-form__control control">
+              <span class="visually-hidden">Опишите все ваши пожелания к заказу</span>
+              <textarea class="control__input control__input--textarea" name="additional-requests"
+                placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </label>
+          </div>
+        </div>
 
-        <p class="order-form__footnote">
-          <small>
-            *Поля обязательны для заполнения
-          </small>
-        </p>
+        <div class="order-form__button-wrapper">
+          <p class="order-form__footnote">
+            <small>
+              *Поля обязательны для заполнения
+            </small>
+          </p>
 
-        <button class="order-form__button button" type="submit">Отправить заказ</button>
-
+          <button class="order-form__button button" type="submit">Отправить заказ</button>
+        </div>
       </form>
     </section>
   </main>

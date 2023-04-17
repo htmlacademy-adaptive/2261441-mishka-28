@@ -27,6 +27,8 @@
   min-height: 177px;
   padding-left: 30px;
   padding-right: 30px;
+  display: flex;
+  align-items: center;
 
 
   &--catalog {
@@ -39,7 +41,14 @@
 }
 
 .main-container__catalog {
+  padding-left: 30px;
+  padding-right: 30px;
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .main-container__manufacturing {
@@ -49,8 +58,10 @@
 }
 
 .main-container__order {
-  margin-left: 30px;
-  margin-right: 30px;
   margin-bottom: 55px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+  }
 }
 

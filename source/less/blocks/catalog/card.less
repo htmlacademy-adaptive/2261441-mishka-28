@@ -1,3 +1,14 @@
+.card {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 316px;
+  }
+}
+
 .card__title-link {
   text-decoration: none;
 }
