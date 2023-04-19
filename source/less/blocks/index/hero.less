@@ -1,6 +1,10 @@
 .hero {
   .grid-4;
   position: relative;
+  min-height: 356px;
+  background-image: url("../img/hero/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top -17px center;
 
   @media (min-width: @tablet-width) {
     .grid-6;
@@ -11,34 +15,24 @@
   }
 }
 
-.hero__image {
-  grid-column: 1/-1;
-}
-
 .hero__summary {
   .text-reset;
   .text(27px,30px,700);
   grid-column: 2/-2;
-  position: absolute;
-  top: 90px;
   text-align: center;
 
   @media (min-width: @tablet-width) {
     .text(43px, 50px, 700);
-    top: 155px;
     grid-column: 3/-3;
   }
 
   @media (min-width: @desktop-width) {
     .text(53px, 57px, 700);
-    top: 158px;
   }
 }
 
 .hero__links-wrapper {
   grid-column: 1/-1;
-  position: relative;
-  bottom: 72px;
 
   @media (min-width: @tablet-width) {
     grid-column: 2/-2;
