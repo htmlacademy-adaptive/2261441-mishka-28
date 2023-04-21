@@ -1,13 +1,14 @@
 .navigation {
   .center-content;
-  position: relative;
-  display: flex;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
     padding-left: 50px;
     padding-right: 50px;
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -16,6 +17,8 @@
 }
 
 .navigation__logo {
+  height: 79px;
+
   @media (min-width: @tablet-width) {
     margin-left: -2px;
   }
@@ -23,6 +26,10 @@
   @media (min-width: @desktop-width) {
     order: 2;
   }
+}
+
+.navigation__logo img {
+  height: 79px;
 }
 
 .navigation__toggle {
@@ -40,6 +47,7 @@
   .list-reset;
   background-color: @white;
   position: relative;
+  width: 100%;
   z-index: 2;
   display: none;
 
