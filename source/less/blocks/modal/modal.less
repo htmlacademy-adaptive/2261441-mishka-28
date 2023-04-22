@@ -2,6 +2,11 @@
   .grid-4;
   padding-top: 28px;
   padding-bottom: 46px;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 108px 1fr 1fr 108px;
+    width: 566px;
+  }
 }
 
 .modal__title {
@@ -31,15 +36,6 @@
 
 .modal__control {
   flex-grow: 1;
-}
-
-.modal-control__input {
-  appearance: none;
-}
-
-.modal-control__label {
-  .text(17px, 16px, 700, @brown);
-  border: 2px solid rgba(68, 68, 68, 0.1);
 }
 
 .modal__button {

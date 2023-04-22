@@ -1,3 +1,14 @@
+.card {
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 316px;
+  }
+}
+
 .card__title-link {
   text-decoration: none;
 }
@@ -12,5 +23,12 @@
 
 .card__price {
   .text(15px, 24px, 700);
+}
+
+.card__button {
+  border: none;
+  background-color: transparent;
+  color: @black;
+  opacity: 0.2;
 }
 

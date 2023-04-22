@@ -1,19 +1,35 @@
 .navigation {
-  position: relative;
-  min-height: 79px;
-}
-
-.navigation__wrapper {
   .center-content;
-  flex-direction: column;
-  min-height: 79px;
   width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .navigation__logo {
-  display: block;
-  width: 86px;
-  height: 35px;
+  height: 79px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: -2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: 2;
+  }
+}
+
+.navigation__logo img {
+  height: 79px;
 }
 
 .navigation__toggle {
@@ -21,12 +37,35 @@
   display: block;
   top: 30px;
   right: 30px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .navigation__list {
   .list-reset;
-  width: 100%;
   background-color: @white;
+  position: relative;
+  width: 100%;
   z-index: 2;
   display: none;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    background-color: transparent;
+  }
+}
+
+.navigation__footnote {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    .text(15px, 24px, @brown);
+    display: block;
+    background-color: transparent;
+    position: relative;
+    order: 4;
+    z-index: 2;
+  }
 }
