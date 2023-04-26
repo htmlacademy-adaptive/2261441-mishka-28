@@ -6,8 +6,15 @@
 }
 
 .advantages__intro {
-  .text-reset;
-  .text(25px, 30px, 700);
+  margin-bottom: -1px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: -12.5px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: -15px;
+  }
 }
 
 .advantages__list {
@@ -22,4 +29,69 @@
   .list-item-reset;
   .text(17px, 20px, 700);
   padding-top: 83px;
+
+  @media (min-width: @tablet-width) {
+    .text(20px, 22px, 700);
+    padding-top: 110px;
+  }
+
+  &--eco-friendly {
+    background-image: url("../img/advantages/eco-friendly-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 8px 29px;
+
+    @media (min-width: @tablet-width) {
+      background-position: 8px 54px;
+    }
+  }
+
+  &--scandinavian-style {
+    background-image: url("../img/advantages/scandinavian-style-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 0 30px;
+
+    @media (min-width: @tablet-width) {
+      background-position: -1px 57px;
+    }
+  }
+
+  &--likes {
+    background-image: url("../img/advantages/likes-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 7px 35px;
+
+    @media (min-width: @tablet-width) {
+      background-position: 8px 63px;
+    }
+  }
+
+  &--hand-made {
+    background-image: url("../img/advantages/hand-made-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 3px 32px;
+
+    @media (min-width: @tablet-width) {
+      background-position: 2px 58px;
+    }
+  }
+
+  &--domestic-product {
+    background-image: url("../img/advantages/domestic-product-icon.svg");
+    background-repeat: no-repeat;
+    background-position: -6px 33px;
+
+    @media (min-width: @tablet-width) {
+      background-position: -10px 59px;
+    }
+  }
+
+  &--gift-wrapped {
+    background-image: url("../img/advantages/gift-wrapped-icon.svg");
+    background-repeat: no-repeat;
+    background-position: 3px 32px;
+
+    @media (min-width: @tablet-width) {
+      background-position: 2px 58px;
+    }
+  }
 }

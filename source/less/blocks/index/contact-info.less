@@ -1,4 +1,29 @@
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+
+  @media (min-width: @desktop-width) {
+    padding-right: 30px;
+  }
+}
+
 .contact-info__label {
-  width: 80px;
+  .text-reset;
+  width: 78px;
   padding-right: 10px;
+  flex-shrink: 0;
+}
+
+.contact-info__email-link {
+  .link-reset;
+  color: @brown;
+  text-decoration-line: underline;
+  text-decoration-color: @green;
+  flex-grow: 1;
+}
+
+.contact-info__address {
+  .text-reset;
+  flex-grow: 1;
 }

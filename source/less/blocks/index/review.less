@@ -3,11 +3,23 @@
 }
 
 .review__text {
-  .text(15px, 30px, @brown);
+  margin-bottom: 33px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 44px;
+  }
 }
 
 .review__author-name {
   .text(17px, 24px, 700);
+
+  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+    font-size: 18px;
+  }
 }
 
 .review__author-email {

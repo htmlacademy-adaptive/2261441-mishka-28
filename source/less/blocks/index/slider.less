@@ -16,5 +16,21 @@
 
 .slider__button {
   flex-grow: 1;
-  border: 1px solid #ececec;
+  border: 1px solid @light-grey;
+
+  &--previous {
+    background-image: url("../img/buttons/huge-arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--next {
+    background-image: url("../img/buttons/huge-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 }

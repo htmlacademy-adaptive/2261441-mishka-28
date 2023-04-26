@@ -9,22 +9,37 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: repeat(3, auto);
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 23px;
+      bottom: -96px;
+      background-image: url("../img/zigzag-line-mobile.svg");
+      background-repeat: repeat-x;
+      background-position: center;
+      background-size: contain;
+    }
   }
 }
 
 .detailed-card__title {
-  .text-reset;
-  .text(25px, 30px, 700);
   margin-bottom: 41px;
 
   @media (min-width: @tablet-width) {
-    .text(43px, 50px, 700);
     grid-column: 1/-1;
+    margin-bottom: 37.5px;
   }
 
   @media (min-width: @desktop-width) {
-    .text(53px, 57px, 700);
+    margin-top: 61px;
+    margin-bottom: 35px;
     grid-column: 2/-1;
+    grid-row: 1/2;
+    order: 4;
+    z-index: 1;
   }
 }
 
@@ -41,29 +56,62 @@
 }
 
 .detailed-card__description {
-  .text-reset;
-  .text(15px, 24px, @brown);
-  margin-bottom: 28px;
+  margin-bottom: 21px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 53px;
+  }
 }
 
 .detailed-card__specs {
   .text-reset;
   .text(15px, 20px, @brown);
-  margin-bottom: 41px;
+  margin-bottom: 28px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 57px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 109px;
+  }
+}
+
+.detailed-card__specs-item {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 7px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid @light-grey;
+}
+
+.detailed-card__feature {
+  width: 97px;
+  flex-shrink: 0;
+  padding-right: 10px;
+}
+
+.detailed-card__value {
+  margin-left: 0;
 }
 
 .detailed-card__image {
-  margin-bottom: 25px;
+  display: block;
+  margin-bottom: 25.5px;
 
   @media (min-width: @tablet-width) {
-    position: absolute;
+    margin-bottom: 0;
     grid-column: 2/3;
-    bottom: 0;
-    right: 0;
+    grid-row: 2/span 2;
   }
 
   @media (min-width: @desktop-width) {
     grid-column: 3/-1;
+    grid-row: 1/span 3;
   }
 }
 
@@ -71,10 +119,18 @@
   .text-reset;
   .text(17px, 24px, 700, @brown);
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 24.5px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    margin-bottom: 33px;
+  }
 }
 
 .detailed-card__button {
   width: 100%;
-  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
 }
