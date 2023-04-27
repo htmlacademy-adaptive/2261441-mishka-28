@@ -1,15 +1,16 @@
-// .order {
-//   padding-left: 30px;
-//   padding-right: 30px;
-
-//   @media (min-width: @tablet-width) {
-//     padding: 0;
-//   }
-// }
-
 .order__text {
   .text-reset;
   .text(13px, 24px, @brown);
-  margin-bottom: 37px;
-}
+  margin-bottom: 29px;
 
+  @media (min-width: @tablet-width) {
+    .text(17px, 30px, @brown);
+    width: 668px;
+    margin: 0 auto;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 702px;
+  }
+}

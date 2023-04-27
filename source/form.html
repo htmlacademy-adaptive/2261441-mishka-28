@@ -75,17 +75,18 @@
             <div class="order-form__legend" id="pseudolegend">Тип</div>
             <ul class="order-form__list">
               <li class="order-form__item">
-                <label class="order-form__control control">
-                  <input class="visually-hidden control__input" type="radio" name="product-type"
+                <label class="order-form__control control control">
+                  <input class="visually-hidden control__input control__input--radio" type="radio" name="product-type"
                     value="interior accessory" checked />
-                  <span class="control__mark"></span>
+                  <span class="control__mark control__mark--radio"></span>
                   <span class="control__label">Аксессуар для интерьера</span>
                 </label>
               </li>
               <li class="order-form__item">
-                <label class="order-form__control control">
-                  <input class="visually-hidden control__input" type="radio" name="product-type" value="toy" />
-                  <span class="control__mark"></span>
+                <label class="order-form__control control control">
+                  <input class="visually-hidden control__input  control__input--radio" type="radio" name="product-type"
+                    value="toy" />
+                  <span class="control__mark control__mark--radio"></span>
                   <span class="control__label">Детская игрушка</span>
                 </label>
               </li>
@@ -99,43 +100,47 @@
             <ul class="order-form__list order-form__list--columns">
               <li class="order-form__item">
                 <label class="order-form__control control">
-                  <input class="visually-hidden control__input" type="checkbox" name="white" checked />
-                  <span class="control__mark"></span>
+                  <input class="visually-hidden control__input  control__input--checkbox" type="checkbox" name="white"
+                    checked />
+                  <span class="control__mark control__mark--checkbox"></span>
                   <span class="control__label">Белый</span>
                 </label>
               </li>
               <li class="order-form__item">
                 <label class="order-form__control control">
-                  <input class="visually-hidden control__input" type="checkbox" name="grey" checked />
-                  <span class="control__mark"></span>
+                  <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="grey"
+                    checked />
+                  <span class="control__mark control__mark--checkbox"></span>
                   <span class="control__label">Серый</span>
                 </label>
               </li>
               <li class="order-form__item">
                 <label class="order-form__control control">
-                  <input class="visually-hidden control__input" type="checkbox" name="tiffany" />
-                  <span class="control__mark"></span>
+                  <input class="visually-hidden control__input control__input--checkbox" type="checkbox"
+                    name="tiffany" />
+                  <span class="control__mark control__mark--checkbox"></span>
                   <span class="control__label">Тиффани</span>
                 </label>
               </li>
               <li class="order-form__item">
                 <label class="order-form__control control">
-                  <input class="visually-hidden control__input" type="checkbox" name="black" />
-                  <span class="control__mark"></span>
+                  <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="black" />
+                  <span class="control__mark control__mark--checkbox"></span>
                   <span class="control__label">Черный</span>
                 </label>
               </li>
               <li class="order-form__item">
                 <label class="order-form__control control">
-                  <input class="visually-hidden control__input" type="checkbox" name="pink" />
-                  <span class="control__mark"></span>
+                  <input class="visually-hidden control__input control__input--checkbox" type="checkbox" name="pink" />
+                  <span class="control__mark control__mark--checkbox"></span>
                   <span class="control__label">Розовый</span>
                 </label>
               </li>
               <li class="order-form__item">
                 <label class="order-form__control control">
-                  <input class="visually-hidden control__input" type="checkbox" name="orange" />
-                  <span class="control__mark"></span>
+                  <input class="visually-hidden control__input control__input--checkbox" type="checkbox"
+                    name="orange" />
+                  <span class="control__mark control__mark--checkbox"></span>
                   <span class="control__label">Оранжевый</span>
                 </label>
               </li>
@@ -148,20 +153,20 @@
             <div class="order-form__legend" id="pseudolegend">ФИО</div>
             <ul class="order-form__list">
               <li class="order-form__item">
-                <label class="order-form__control control">
-                  <span class="control__label">Имя:</span>
+                <label class="order-form__control control control--name">
+                  <span class="control__label control__label--name">Имя:</span>
                   <input class="control__input" type="text" name="name" placeholder="Введите ваше имя*" required />
                 </label>
               </li>
               <li>
-                <label class="order-form__control control">
-                  <span class="control__label">Фамилия:</span>
+                <label class="order-form__control control control--name">
+                  <span class="control__label control__label--name">Фамилия:</span>
                   <input class="control__input" type="text" name="surname" placeholder="Укажите фамилию*" required />
                 </label>
               </li>
               <li>
-                <label class="order-form__control control">
-                  <span class="control__label">Отчество:</span>
+                <label class="order-form__control control control--name">
+                  <span class="control__label control__label--name">Отчество:</span>
                   <input class="control__input" type="text" name="patronimic" placeholder="Отчество, если желаете" />
                 </label>
               </li>
@@ -169,25 +174,43 @@
           </div>
         </div>
 
-        <div class="order-form__fieldset order-form__fieldset--grey" role="group" aria-labelledby="pseudolegend">
+        <div class="order-form__fieldset order-form__fieldset--grey order-form__fieldset--phone" role="group"
+          aria-labelledby="pseudolegend">
           <div class="order-form__fieldset-container container">
             <div class="order-form__legend" id="pseudolegend">Тел</div>
             <div class="order-form__input-wrapper">
               <label class="order-form__control control">
                 <span class="visually-hidden">Введите ваш телефон</span>
                 <input class="control__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                <svg class="control__input-picture control__input-picture--phone" width="25" height="24"
+                  viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g fill="currentColor">
+                    <path
+                      d="M17.44 24h-1.1a17.63 17.63 0 0 1-11.2-5.73A18.8 18.8 0 0 1 0 6.72V5.33c.1-.89.5-1.48 1.1-2.07.61-.7 1.62-1.48 2.53-1.58.7 0 1.81.5 2.22 1.09.4.49.6 1.58.8 2.37.2.88.6 1.97.5 2.76-.2 1.19-1.8 1.68-2.21 2.57a16.4 16.4 0 0 0 7.56 8.2c.8-.5 1.61-1.88 2.82-1.88.4 0 1.01.2 1.41.3.5.1.91.3 1.31.49.71.3 2.02.6 2.42 1.19.4.59.7 1.58.6 2.17-.3 1.28-2.41 2.66-3.62 3.06ZM12.6 1.48A10.8 10.8 0 0 1 23.5 12.15H25C25 5.43 19.46 0 12.6 0v1.48Z" />
+                    <path
+                      d="M12.6 9.19v1.58c.8 0 1.41.59 1.41 1.38h1.62a3 3 0 0 0-3.03-2.96ZM12.6 6.12a6.11 6.11 0 0 1 6.15 6.03h1.61c0-4.15-3.42-7.5-7.66-7.5v1.47h-.1Z" />
+                  </g>
+                </svg>
               </label>
             </div>
           </div>
         </div>
 
-        <div class="order-form__fieldset order-form__fieldset--grey" role="group" aria-labelledby="pseudolegend">
+        <div class="order-form__fieldset order-form__fieldset--grey order-form__fieldset--email" role="group"
+          aria-labelledby="pseudolegend">
           <div class="order-form__fieldset-container container">
             <div class="order-form__legend" id="pseudolegend">E-mail</div>
             <div class="order-form__input-wrapper">
               <label class="order-form__control control">
                 <span class="visually-hidden">Введите ваш e-mail</span>
-                <input class="control__input" type="email" name="email" placeholder="Ваш Email*" required>
+                <input class="control__input control__input--email" type="email" name="email" placeholder="Ваш Email*"
+                  required>
+                <svg class="control__input-picture control__input-picture--email" width="32" height="21"
+                  viewBox="0 0 32 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M28 0H4C1.8 0 0 1.8 0 4v13c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4ZM2 5.3l7 5.3-7 5.3V5.3ZM30 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2l7.8-5.9 4.4 3.3a3 3 0 0 0 3.6 0l4.4-3.3L30 17Zm0-1.2-7-5.3 7-5.3v10.6Zm-12.8-2.2c-.4.3-.8.4-1.2.4-.4 0-.9-.1-1.2-.4l-4.1-3.1-.8-.6L2 4c0-1.1.9-2 2-2h24a2 2 0 0 1 2 2l-12.8 9.6Z"
+                    fill="currentColor" />
+                </svg>
               </label>
             </div>
           </div>
@@ -195,7 +218,7 @@
 
         <div class="order-form__fieldset" role="group" aria-labelledby="pseudolegend">
           <div class="order-form__fieldset-container container">
-            <div class="order-form__legend" id="pseudolegend">Доп</div>
+            <div class="order-form__legend order-form__legend--additional-requests" id="pseudolegend">Доп</div>
             <div class="order-form__input-wrapper">
               <label class="order-form__control control">
                 <span class="visually-hidden">Опишите все ваши пожелания к заказу</span>
