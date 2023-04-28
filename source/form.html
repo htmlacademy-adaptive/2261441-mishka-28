@@ -72,7 +72,9 @@
       <form class="order__form order-form" action="https://echo.htmlacademy.ru/" method="get">
         <div class="order-form__fieldset" role="group" aria-labelledby="pseudolegend">
           <div class="order-form__fieldset-container container">
-            <div class="order-form__legend" id="pseudolegend">Тип</div>
+            <div class="order-form__legend" id="pseudolegend">
+              <span class="order-form__legend-text">Тип</span>
+            </div>
             <ul class="order-form__list">
               <li class="order-form__item">
                 <label class="order-form__control control control">
@@ -96,7 +98,9 @@
 
         <div class="order-form__fieldset order-form__fieldset--grey" role="group" aria-labelledby="pseudolegend">
           <div class="order-form__fieldset-container container">
-            <div class="order-form__legend" id="pseudolegend">Цвет</div>
+            <div class="order-form__legend" id="pseudolegend">
+              <span class="order-form__legend-text">Цвет</span>
+            </div>
             <ul class="order-form__list order-form__list--columns">
               <li class="order-form__item">
                 <label class="order-form__control control">
@@ -150,7 +154,9 @@
 
         <div class="order-form__fieldset" role="group" aria-labelledby="pseudolegend">
           <div class="order-form__fieldset-container container">
-            <div class="order-form__legend" id="pseudolegend">ФИО</div>
+            <div class="order-form__legend" id="pseudolegend">
+              <span class="order-form__legend-text">ФИО</span>
+            </div>
             <ul class="order-form__list">
               <li class="order-form__item">
                 <label class="order-form__control control control--name">
@@ -177,11 +183,14 @@
         <div class="order-form__fieldset order-form__fieldset--grey order-form__fieldset--phone" role="group"
           aria-labelledby="pseudolegend">
           <div class="order-form__fieldset-container container">
-            <div class="order-form__legend" id="pseudolegend">Тел</div>
+            <div class="order-form__legend" id="pseudolegend">
+              <span class="order-form__legend-text">Тел</span>
+            </div>
             <div class="order-form__input-wrapper">
               <label class="order-form__control control">
                 <span class="visually-hidden">Введите ваш телефон</span>
-                <input class="control__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                <input class="control__input control__input--picture" type="tel" name="phone"
+                  placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                 <svg class="control__input-picture control__input-picture--phone" width="25" height="24"
                   viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <g fill="currentColor">
@@ -199,11 +208,13 @@
         <div class="order-form__fieldset order-form__fieldset--grey order-form__fieldset--email" role="group"
           aria-labelledby="pseudolegend">
           <div class="order-form__fieldset-container container">
-            <div class="order-form__legend" id="pseudolegend">E-mail</div>
+            <div class="order-form__legend" id="pseudolegend">
+              <span class="order-form__legend-text">E-mail</span>
+            </div>
             <div class="order-form__input-wrapper">
               <label class="order-form__control control">
                 <span class="visually-hidden">Введите ваш e-mail</span>
-                <input class="control__input control__input--email" type="email" name="email" placeholder="Ваш Email*"
+                <input class="control__input control__input--picture" type="email" name="email" placeholder="Ваш Email*"
                   required>
                 <svg class="control__input-picture control__input-picture--email" width="32" height="21"
                   viewBox="0 0 32 21" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -218,8 +229,10 @@
 
         <div class="order-form__fieldset" role="group" aria-labelledby="pseudolegend">
           <div class="order-form__fieldset-container container">
-            <div class="order-form__legend order-form__legend--additional-requests" id="pseudolegend">Доп</div>
-            <div class="order-form__input-wrapper">
+            <div class="order-form__legend" id="pseudolegend">
+              <span class="order-form__legend-text">Доп</span>
+            </div>
+            <div class="order-form__input-wrapper order-form__input-wrapper--textarea">
               <label class="order-form__control control">
                 <span class="visually-hidden">Опишите все ваши пожелания к заказу</span>
                 <textarea class="control__input control__input--textarea" name="additional-requests"

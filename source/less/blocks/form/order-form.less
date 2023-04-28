@@ -43,7 +43,8 @@
 .order-form__legend {
   .text(17px, 18px, 700, @green);
   text-transform: uppercase;
-  display: inline-block;
+  display: block;
+  position: relative;
   padding-left: 0;
 
   @media (min-width: @tablet-width) {
@@ -51,10 +52,29 @@
     padding-top: 16px;
   }
 
-  &--additional-requests {
-    @media (max-width: @mobile-width-only) {
-      padding-bottom: 22px;
+  &::before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 1px;
+    background-color: @active-green;
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+
+    @media (min-width: @tablet-width) {
+      display: none;
     }
+  }
+}
+
+.order-form__legend-text {
+  position: relative;
+  padding-right: 18px;
+  background-color: @white;
+
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
   }
 }
 
@@ -96,6 +116,10 @@
 }
 
 .order-form__input-wrapper {
+  @media (max-width: @mobile-width-only) {
+    padding-top: 22px;
+  }
+
   @media (min-width: @tablet-width) {
     grid-column: 2/-1;
   }
