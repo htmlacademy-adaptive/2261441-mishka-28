@@ -1,6 +1,8 @@
 .navigation {
   .center-content;
   width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
   position: absolute;
   top: 0;
   left: 0;
@@ -21,6 +23,7 @@
 
   @media (min-width: @tablet-width) {
     margin-left: -2px;
+    height: 88px;
   }
 
   @media (min-width: @desktop-width) {
@@ -35,11 +38,67 @@
 .navigation__toggle {
   position: absolute;
   display: block;
-  top: 30px;
+  width: 21px;
+  height: 20px;
+  background-color: @white;
+  top: 29px;
   right: 30px;
+  cursor: pointer;
+  border: none;
 
   @media (min-width: @tablet-width) {
     display: none;
+  }
+}
+
+.navigation--closed .navigation__list {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
+.navigation--closed .navigation__toggle::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  right: 1px;
+  width: 20px;
+  height: 2px;
+  background-color: #231f20;
+  box-shadow: 0 6px 0 0 #231f20, 0 12px 0 0 #231f20;
+}
+
+.navigation--closed .navigation__toggle:hover::before {
+  background-color: fade(#231f20, 60%);
+  box-shadow:
+    0 6px 0 0 fade(#231f20, 60%),
+    0 12px 0 0 fade(#231f20, 60%);
+}
+
+.navigation--opened .navigation__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 9.5px;
+    right: -3px;
+    width: 27px;
+    height: 2px;
+    background-color: @black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:hover::before,
+  &:hover::after {
+    background-color: fade(@black, 60%);
   }
 }
 
@@ -49,7 +108,6 @@
   position: relative;
   width: 100%;
   z-index: 2;
-  display: none;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -67,5 +125,15 @@
     position: relative;
     order: 4;
     z-index: 2;
+  }
+}
+
+.navigation--nojs .navigation__toggle {
+  display: none;
+}
+
+.navigation--nojs {
+  @media (max-width: @mobile-width-only) {
+    position: static;
   }
 }

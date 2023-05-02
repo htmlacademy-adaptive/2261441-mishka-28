@@ -1,0 +1,21 @@
+.index-text {
+  .text-reset;
+  .text(15px, 24px, @brown);
+
+  &--review {
+    @media (max-width: @mobile-width-only) {
+      line-height: 30px;
+    }
+  }
+
+  &--contacts {
+    @media (max-width: @mobile-width-only) {
+      font-size: 14px;
+      line-height: 30px;
+    }
+  }
+
+  @media (min-width: @tablet-width) {
+    .text(17px, 30px, @brown);
+  }
+}

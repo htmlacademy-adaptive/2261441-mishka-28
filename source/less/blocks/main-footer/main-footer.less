@@ -3,11 +3,27 @@
 }
 
 .main-footer__container {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   min-height: 160px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 260px;
+    height: 1px;
+    background-color: #e5e5e5;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     justify-content: space-between;

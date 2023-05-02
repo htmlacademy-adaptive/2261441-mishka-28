@@ -10,7 +10,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <nav class="main-header__navigation navigation">
+    <nav class="main-header__navigation navigation navigation--closed navigation--nojs">
       <a class="navigation__logo header-logo">
         <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'.">
       </a>
@@ -64,34 +64,43 @@
 
     <section class="main-container__hero hero">
       <h2 class="visually-hidden">Ассортимент магазина</h2>
-      <p class="hero__summary container">Милые штуки ручной работы&nbsp;для&nbsp;дома</p>
+      <p class="hero__summary container index-lead index-lead--hero">Милые штуки ручной работы&nbsp;для&nbsp;дома</p>
       <div class="hero__links-wrapper">
         <a class="hero__link hero__link--interior" href="#">Предметы интерьера</a>
         <a class="hero__link hero__link--toys" href="#">Детские игрушки</a>
       </div>
     </section>
 
-    <section class="main-container__featured-product featured-product ">
+    <section class="main-container__featured-product featured-product">
       <div class="featured-product__title-container container">
         <h2 class="featured-product__title ">Товар недели</h2>
       </div>
       <article class="featured-product__item detailed-card container">
-        <h3 class="detailed-card__title">Вязаные корзинки</h3>
+        <h3 class="detailed-card__title index-lead">Вязаные корзинки</h3>
         <div class="detailed-card__content">
-          <p class="detailed-card__description">Экологически чистая пряжа,
+          <p class="detailed-card__description index-text">Экологически чистая пряжа,
             ручная работа. Доступны в шести расцветках и трёх размерах.</p>
-          <dl class="detailed-card__specs specs">
-            <dt class="specs__feature">Цвет:</dt>
-            <dd class="specs__value">тиффани/серый</dd>
+          <dl class="detailed-card__specs">
+            <div class="detailed-card__specs-item">
+              <dt class="detailed-card__feature">Цвет:</dt>
+              <dd class="detailed-card__value">тиффани/серый</dd>
+            </div>
 
-            <dt class="specs__feature">Диаметр:</dt>
-            <dd class="specs__value">25 см</dd>
+            <div class="detailed-card__specs-item">
+              <dt class="detailed-card__feature">Диаметр:</dt>
+              <dd class="detailed-card__value">25 см</dd>
+            </div>
 
-            <dt class="specs__feature">Высота:</dt>
-            <dd class="specs__value">15 см</dd>
+            <div class="detailed-card__specs-item">
+              <dt class="detailed-card__feature">Высота:</dt>
+              <dd class="detailed-card__value">15 см</dd>
+            </div>
           </dl>
-          <img class="detailed-card__image" src="img/triple-set-mobile.jpg" width="260" height="315"
-            alt="Три вязаных корзиночки.">
+        </div>
+        <img class="detailed-card__image" src="img/triple-set-mobile.jpg" width="260" height="315"
+          alt="Три вязаных корзиночки.">
+
+        <div class="detailed-card__content">
           <p class="detailed-card__price">Цена: 990 руб.</p>
           <button class="detailed-card__button button" type="button">Заказать</button>
         </div>
@@ -101,9 +110,9 @@
     <section class="main-container__advantages advantages">
       <div class="advantages__container container">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <p class="advantages__intro">Коротко о нас:</p>
+        <p class="advantages__intro index-lead">Коротко о нас:</p>
         <ul class="advantages__list">
-          <li class="advantages__item advantages__item--eco-friendly">Экологически чистые материалы</li>
+          <li class="advantages__item advantages__item--eco-friendly">Экологически <br> чистые материалы</li>
           <li class="advantages__item advantages__item--scandinavian-style">Скандинавский стиль по российской цене
           </li>
           <li class="advantages__item advantages__item--likes">Увеличивает лайки на фотографиях</li>
@@ -116,12 +125,13 @@
 
     <section class="main-container__customer-reviews customer-reviews">
       <div class="customer-reviews__container container">
-        <h2 class="customer-reviews__title">Отзывы</h2>
+        <h2 class="customer-reviews__title index-lead">Отзывы</h2>
         <div class="customer-reviews__wrapper slider">
           <ol class="customer-reviews__list">
             <li class="customer-reviews__item slider__item slider__item--current">
               <blockquote class="review">
-                <p class="review__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества
+                <p class="review__text index-text index-text--review">Я молодая мама, но всё равно фотографии не
+                  набирали и близко такого количества
                   лайков, как у популярных
                   инстамамочек.
                   В отчаянии, я накупила аксессуаров и игрушек в Мишке,
@@ -133,7 +143,8 @@
             </li>
             <li class="customer-reviews__item slider__item">
               <blockquote class="review">
-                <p class="review__text">Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого
+                <p class="review__text index-text index-text--review">Я сестра молодой мамы, но всё равно фотографии не
+                  набирали и близко такого
                   количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
                   и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
                   больше лайков!
@@ -144,7 +155,8 @@
             </li>
             <li class="customer-reviews__item slider__item">
               <blockquote class="review">
-                <p class="review__text">Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко
+                <p class="review__text index-text index-text--review">Я двоюродная сестра молодой мамы, но всё равно
+                  фотографии не набирали и близко
                   такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
                   и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
                   больше лайков!
@@ -168,15 +180,22 @@
     </section>
 
     <section class="main-container__contacts contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <address class="contacts__info contact-info">
+      <h2 class="contacts__title index-lead">Контакты</h2>
+      <address class="contacts__info contact-info index-text index-text--contacts">
         <p class="contact-info__label">e-mail:</p>
-        <a class="contact-info__email-link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        <a class="contact-info__email-link" href="mailto:info@mimimishkashop.ru">
+          <span class="contact-info__email">info@mimimishkashop.ru</span>
+        </a>
         <p class="contact-info__label">адрес:</p>
         <p class="contact-info__address">г. Санкт-Петербург <br> ул. Большая Конюшенная <br> д. 19/8, офис 101</p>
       </address>
-      <img class="contacts__map" src="img/map.jpg" width="320" height="455"
-        alt="Магазин 'Мишка' на карте Санкт-Петербурга.">
+
+      <iframe class="contacts__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4618.015193540775!2d30.318885068805756!3d59.939933482942195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1682490672614!5m2!1sru!2sru"
+        width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <!-- <img class="contacts__map" src="img/map.jpg" width="320" height="455"
+        alt="Магазин 'Мишка' на карте Санкт-Петербурга."> -->
       <a class="contacts__feedback-link button" href="#">Напишите нам</a>
     </section>
   </main>
@@ -265,6 +284,7 @@
     </div>
   </div>
 
+  <script src="js/app.js"></script>
 </body>
 
 </html>
