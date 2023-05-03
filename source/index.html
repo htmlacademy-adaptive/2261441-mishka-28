@@ -12,7 +12,11 @@
   <header class="main-header">
     <nav class="main-header__navigation navigation navigation--closed navigation--nojs">
       <a class="navigation__logo header-logo">
-        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'.">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo/mishka-logo-desktop.svg" width="149" height="72">
+          <source media="(min-width: 768px)" srcset="img/logo/mishka-logo-tablet.svg" width="114" height="46">
+          <img src="img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'.">
+        </picture>
       </a>
       <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
       <ul class="navigation__list site-list">
@@ -97,16 +101,18 @@
             </div>
           </dl>
         </div>
-        <picture>
-          <source media="(min-width: 1150px)"
-            srcset="img/detailed-card/triple-set-desktop.jpg 1x, img/detailed-card/triple-set-desktop@2x.jpg 2x"
-            width="525" height="636">
-          <source media="(min-width: 768px)"
-            srcset="img/detailed-card/triple-set-tablet.jpg 1x, img/detailed-card/triple-set-tablet@2x.jpg 2x"
-            width="334" height="404">
-          <img class="detailed-card__image" src="img/detailed-card/triple-set-mobile.jpg" width="260" height="315"
-            srcset="img/detailed-card/triple-set-mobile@2x.jpg 2x" alt="Три вязаных корзиночки.">
-        </picture>
+        <div class="detailed-card__image-container">
+          <picture>
+            <source media="(min-width: 1150px)"
+              srcset="img/detailed-card/triple-set-desktop.jpg 1x, img/detailed-card/triple-set-desktop@2x.jpg 2x"
+              width="525" height="636">
+            <source media="(min-width: 768px)"
+              srcset="img/detailed-card/triple-set-tablet.jpg 1x, img/detailed-card/triple-set-tablet@2x.jpg 2x"
+              width="334" height="404">
+            <img class="detailed-card__image" src="img/detailed-card/triple-set-mobile.jpg" width="260" height="315"
+              srcset="img/detailed-card/triple-set-mobile@2x.jpg 2x" alt="Три вязаных корзиночки.">
+          </picture>
+        </div>
         <div class="detailed-card__content">
           <p class="detailed-card__price">Цена: 990 руб.</p>
           <button class="detailed-card__button button" type="button">Заказать</button>
