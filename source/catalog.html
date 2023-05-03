@@ -69,7 +69,14 @@
       <ul class="catalog__list">
         <li class="catalog__item card">
           <a class="card__image-link" href="#">
-            <img class="card__image" src="img/cards/card-1-mobile.jpg" width="260" height="195" alt="Зайчик.">
+            <picture>
+              <source media="(min-width: 1150px)"
+                srcset="img/cards/card-1-desktop.jpg 1x, img/cards/card-1-desktop@2x.jpg 2x" width="316" height="462">
+              <source media="(min-width: 768px)"
+                srcset="img/cards/card-1-tablet.jpg 1x, img/cards/card-1-tablet@2x.jpg 2x" width="334" height="334">
+              <img class="card__image" src="img/cards/card-1-mobile.jpg" width="260" height="195"
+                srcset="img/cards/card-1-mobile@2x.jpg 2x" alt="Зайчик.">
+            </picture>
           </a>
           <div class="card__content">
             <a class="card__title-link" href="#">
@@ -93,8 +100,14 @@
         </li>
         <li class="catalog__item card">
           <a class="card__image-link" href="#">
-            <img class="card__image" src="img/cards/card-2-mobile.jpg" width="260" height="195"
-              alt="Корзинка с бельем.">
+            <picture>
+              <source media="(min-width: 1150px)"
+                srcset="img/cards/card-2-desktop.jpg 1x, img/cards/card-2-desktop@2x.jpg 2x" width="316" height="462">
+              <source media="(min-width: 768px)"
+                srcset="img/cards/card-2-tablet.jpg 1x, img/cards/card-2-tablet@2x.jpg 2x" width="334" height="334">
+              <img class="card__image" src="img/cards/card-2-mobile.jpg" width="260" height="195"
+                srcset="img/cards/card-2-mobile@2x.jpg 2x" alt="Корзинка с бельем.">
+            </picture>
           </a>
           <div class="card__content">
             <a class="card__title-link" href="#">
@@ -118,8 +131,14 @@
         </li>
         <li class="catalog__item card">
           <a class="card__image-link" href="#">
-            <img class="card__image" src="img/cards/card-3-mobile.jpg" width="260" height="195"
-              alt="Корзинка с игрушками.">
+            <picture>
+              <source media="(min-width: 1150px)"
+                srcset="img/cards/card-3-desktop.jpg 1x, img/cards/card-3-desktop@2x.jpg 2x" width="316" height="462">
+              <source media="(min-width: 768px)"
+                srcset="img/cards/card-3-tablet.jpg 1x, img/cards/card-3-tablet@2x.jpg 2x" width="334" height="334">
+              <img class="card__image" src="img/cards/card-3-mobile.jpg" width="260" height="195"
+                srcset="img/cards/card-3-mobile@2x.jpg 2x" alt="Корзинка с игрушками.">
+            </picture>
           </a>
           <div class="card__content">
             <a class="card__title-link" href="#">
@@ -148,8 +167,16 @@
 
       <div class="manufacturing__video video">
         <a class="video__link" href="#">
-          <img class="video__media" src="img/manufacturing/video-mobile.jpg" width="260" height="150"
-            alt="Первые кадры видео.">
+          <picture>
+            <source media="(min-width: 1150px)"
+              srcset="img/manufacturing/video-desktop.jpg 1x, img/manufacturing/video-desktop@2x.jpg 2x" width="682.65"
+              height="455">
+            <source media="(min-width: 768px)"
+              srcset="img/manufacturing/video-tablet.jpg 1x, img/manufacturing/video-tablet@2x.jpg 2x" width="668"
+              height="455">
+            <img class="video__media" src="img/manufacturing/video-mobile.jpg" width="260" height="150"
+              srcset="img/manufacturing/video-mobile@2x.jpg 2x" alt="Первые кадры видео.">
+          </picture>
         </a>
         <button class="video__button" type="button">
           <span class="visually-hidden">Запустить видео</span>

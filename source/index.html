@@ -97,9 +97,16 @@
             </div>
           </dl>
         </div>
-        <img class="detailed-card__image" src="img/triple-set-mobile.jpg" width="260" height="315"
-          alt="Три вязаных корзиночки.">
-
+        <picture>
+          <source media="(min-width: 1150px)"
+            srcset="img/detailed-card/triple-set-desktop.jpg 1x, img/detailed-card/triple-set-desktop@2x.jpg 2x"
+            width="525" height="636">
+          <source media="(min-width: 768px)"
+            srcset="img/detailed-card/triple-set-tablet.jpg 1x, img/detailed-card/triple-set-tablet@2x.jpg 2x"
+            width="334" height="404">
+          <img class="detailed-card__image" src="img/detailed-card/triple-set-mobile.jpg" width="260" height="315"
+            srcset="img/detailed-card/triple-set-mobile@2x.jpg 2x" alt="Три вязаных корзиночки.">
+        </picture>
         <div class="detailed-card__content">
           <p class="detailed-card__price">Цена: 990 руб.</p>
           <button class="detailed-card__button button" type="button">Заказать</button>
