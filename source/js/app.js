@@ -12,3 +12,10 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('navigation--opened');
   }
 });
+
+let mapImage = document.querySelector('.contacts__map-image');
+let map = document.querySelector('.contacts__map');
+
+mapImage.classList.remove('contacts__map-image--nojs');
+map.classList.remove('contacts__map--nojs');
+
