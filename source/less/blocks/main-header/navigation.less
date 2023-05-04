@@ -128,12 +128,20 @@
   }
 }
 
-.navigation--nojs .navigation__toggle {
-  display: none;
+.navigation.navigation--nojs {
+  @media (max-width: @mobile-width-only) {
+    position: static;
+  }
 }
 
 .navigation--nojs {
-  @media (max-width: @mobile-width-only) {
-    position: static;
+  .navigation__toggle {
+    display: none;
+  }
+
+  .navigation__list {
+    @media (max-width: @mobile-width-only) {
+      display: block;
+    }
   }
 }
