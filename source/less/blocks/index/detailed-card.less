@@ -4,6 +4,7 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
   }
 
   @media (min-width: @desktop-width) {
@@ -101,10 +102,14 @@
 
 .detailed-card__image {
   display: block;
+}
+
+.detailed-card__image-container {
   margin-bottom: 25.5px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
+    margin-top: auto;
     grid-column: 2/3;
     grid-row: 2/span 2;
   }

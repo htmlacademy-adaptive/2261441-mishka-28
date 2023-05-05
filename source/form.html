@@ -6,13 +6,21 @@
   <title>HTML Academy: Мишка</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <nav class="main-header__navigation navigation navigation--closed navigation--nojs">
       <a class="navigation__logo header-logo" href="index.html" title="На главную">
-        <img src="img/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'.">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo/mishka-logo-desktop.svg" width="149" height="72">
+          <source media="(min-width: 768px)" srcset="img/logo/mishka-logo-tablet.svg" width="114" height="46">
+          <img src="img/logo/mishka-logo-mobile.svg" width="86" height="35" alt="Логотип магазина 'Мишка'.">
+        </picture>
       </a>
       <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
       <ul class="navigation__list site-list">

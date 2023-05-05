@@ -1,11 +1,24 @@
 .modal {
-  .grid-4;
-  padding-top: 28px;
-  padding-bottom: 46px;
+  .center-content;
+  flex-direction: column;
+  position: fixed;
+  width: 400px;
+  padding-left: 69px;
+  padding-right: 69px;
+  padding-top: 27.5px;
+  padding-bottom: 45px;
+  min-height: 336px;
+
+  background-color: @white;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 
   @media (min-width: @tablet-width) {
-    grid-template-columns: 108px 1fr 1fr 108px;
     width: 566px;
+    padding-left: 89px;
+    padding-right: 89px;
+    padding-top: 26.5px;
+    padding-bottom: 45px;
   }
 }
 
@@ -14,18 +27,32 @@
   .text(25px, 30px, 700);
   text-transform: uppercase;
   text-align: center;
-  grid-column: 2/-2;
   margin-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    .text(30px, 57px, 700);
+    margin-bottom: 11px;
+  }
 }
 
 .modal__form {
-  grid-column: 2/-2;
+  width: 260px;
+
+  @media (min-width: @tablet-width) {
+    width: 320px;
+  }
 }
 
 .modal__text {
   .text-reset;
   .text(15px, 30px, @brown);
   text-align: center;
+  margin-bottom: 21.5px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    margin-bottom: 19.5px;
+  }
 }
 
 .modal__radio-group {
