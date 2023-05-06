@@ -1,3 +1,5 @@
+// Открывает/закрывает навигацию в мобильной версии
+
 let navMain = document.querySelector('.navigation');
 let navToggle = document.querySelector('.navigation__toggle');
 
@@ -12,6 +14,8 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('navigation--opened');
   }
 });
+
+// Показывает интерактивную карту
 
 let mapImage = document.querySelector('.contacts__map-image');
 let map = document.querySelector('.contacts__map');
