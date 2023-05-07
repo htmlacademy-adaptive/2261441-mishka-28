@@ -13,5 +13,37 @@
 
 .social-list__link {
   .center-content;
-  color: #231f20;
+
+  &--vk {
+    &::after {
+      content: "";
+      display: inline-block;
+      mask-image: url("../img/stack.svg#vk-icon");
+      background-color: #231f20;
+      width: 27px;
+      height: 18px;
+    }
+  }
+
+  &--youtube {
+    &::after {
+      content: "";
+      display: inline-block;
+      mask-image: url("../img/stack.svg#youtube-icon");
+      background-color: #231f20;
+      width: 28px;
+      height: 23px;
+    }
+  }
+
+  &--telegram {
+    &::after {
+      content: "";
+      display: inline-block;
+      mask-image: url("../img/stack.svg#telegram-icon");
+      background-color: #231f20;
+      width: 28px;
+      height: 23px;
+    }
+  }
 }

@@ -22,6 +22,33 @@
 
 .user-list__link {
   .link-reset;
+
+  &--search {
+    &::before {
+      content: "";
+      display: inline-block;
+      mask-image: url("../img/stack.svg#search");
+      background-color: @black;
+      opacity: 0.2;
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &--cart {
+    &::before {
+      content: "";
+      display: inline-block;
+      mask-image: url("../img/stack.svg#cart");
+      background-color: @black;
+      opacity: 0.2;
+      width: 21px;
+      height: 18px;
+    }
+  }
+}
+
+.user-list__link-text {
   .text(17px, 24px, 700);
 
   &--search {
@@ -29,8 +56,4 @@
       display: none;
     }
   }
-}
-
-.user-list__icon {
-  opacity: 0.2;
 }

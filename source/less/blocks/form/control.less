@@ -9,6 +9,54 @@
       align-items: flex-start;
     }
   }
+
+  &--phone {
+    &::after {
+      content: "";
+      display: block;
+      width: 25px;
+      height: 24px;
+      position: absolute;
+      top: 11px;
+      right: 7px;
+      mask-image: url("../img/stack.svg#phone");
+      mask-size: 25px 24px;
+      background-color: @black;
+      opacity: 0.2;
+
+      @media (min-width: @tablet-width) {
+        right: 26px;
+      }
+
+      @media (min-width: @desktop-width) {
+        right: 8px;
+      }
+    }
+  }
+
+  &--mail {
+    &::after {
+      content: "";
+      display: block;
+      width: 32px;
+      height: 21px;
+      position: absolute;
+      top: 16px;
+      right: 3px;
+      mask-image: url("../img/stack.svg#mail");
+      mask-size: 32px 21px;
+      background-color: @black;
+      opacity: 0.2;
+
+      @media (min-width: @tablet-width) {
+        right: 22px;
+      }
+
+      @media (min-width: @desktop-width) {
+        right: 4px;
+      }
+    }
+  }
 }
 
 .control__label {
@@ -84,36 +132,6 @@
 
   @media (min-width: @tablet-width) {
     font-size: 19px;
-  }
-}
-
-.control__input-picture {
-  position: absolute;
-  color: @black;
-  opacity: 0.2;
-
-  &--phone {
-    right: 7px;
-
-    @media (min-width: @tablet-width) {
-      right: 26px;
-    }
-
-    @media (min-width: @desktop-width) {
-      right: 8px;
-    }
-  }
-
-  &--email {
-    right: 3px;
-
-    @media (min-width: @tablet-width) {
-      right: 22px;
-    }
-
-    @media (min-width: @desktop-width) {
-      right: 4px;
-    }
   }
 }
 
