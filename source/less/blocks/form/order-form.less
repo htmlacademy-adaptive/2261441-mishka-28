@@ -98,6 +98,14 @@
     grid-column: 2/-2;
   }
 
+  &--checkbox {
+    @media (max-width: @mobile-width-only) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      row-gap: 23px;
+    }
+  }
+
   &--columns {
     @media (min-width: @tablet-width) {
       display: grid;

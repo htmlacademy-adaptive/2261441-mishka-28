@@ -1,0 +1,22 @@
+.catalog-list {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    order: 4;
+    min-height: 67px;
+    width: 405px;
+  }
+}
+
+.catalog-list__item {
+  justify-content: start;
+  width: 185px;
+}
+
+.catalog-list__link {
+  .link-reset;
+  .text(15px, 24 px, 700);
+  text-align: left;
+}
