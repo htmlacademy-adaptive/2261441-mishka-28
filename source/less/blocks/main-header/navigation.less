@@ -1,16 +1,11 @@
 .navigation {
-  .center-content;
   width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
   position: absolute;
   top: 0;
   left: 0;
-  flex-direction: column;
 
   @media (min-width: @tablet-width) {
-    padding-left: 50px;
-    padding-right: 50px;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -19,20 +14,33 @@
 }
 
 .navigation__logo {
+  .link-reset;
+  width: 86px;
   height: 79px;
+  margin: 0 auto;
 
   @media (min-width: @tablet-width) {
+    margin: 0;
     margin-left: -2px;
-    height: 88px;
+    margin-right: 48px;
+    width: 113px;
+    height: 89px;
+    align-self: start;
   }
 
   @media (min-width: @desktop-width) {
     order: 2;
+    width: 149px;
+    margin: 0 auto;
   }
 }
 
 .navigation__logo img {
   height: 79px;
+
+  @media (min-width: @tablet-width) {
+    height: 89px;
+  }
 }
 
 .navigation__toggle {
@@ -102,6 +110,16 @@
   }
 }
 
+.navigation__item {
+  .center-content;
+  min-height: 79px;
+  box-shadow: 0 1px 0 @light-grey, inset 0 1px 0 @light-grey;
+
+  @media (min-width: @tablet-width) {
+    box-shadow: none;
+  }
+}
+
 .navigation__list {
   .list-reset;
   background-color: @white;
@@ -111,7 +129,23 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     background-color: transparent;
+  }
+}
+
+.navigation__link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    width: 260px;
+    padding-left: 46px;
   }
 }
 

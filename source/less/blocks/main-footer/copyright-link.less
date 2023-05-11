@@ -2,10 +2,18 @@
   .link-reset;
   color: @green;
   width: 183px;
-  height: 34px;
+  min-height: 35px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: fade(#46c1ae, 30%);
+  }
 }
 
 .copyright-link__text {
