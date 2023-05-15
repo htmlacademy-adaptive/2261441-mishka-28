@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
@@ -71,6 +71,12 @@
         <li class="catalog__item card">
           <a class="card__image-link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)"
+                srcset="img/cards/card-1-desktop.webp 1x, img/cards/card-1-desktop@2x.webp 2x" width="316" height="462">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/cards/card-1-tablet.webp 1x, img/cards/card-1-tablet@2x.webp 2x" width="334" height="334">
+              <source type="image/webp" srcset="img/cards/card-1-mobile.webp 1x, img/cards/card-1-mobile@2x.webp 2x"
+                width="260" height="195">
               <source media="(min-width: 1150px)"
                 srcset="img/cards/card-1-desktop.jpg 1x, img/cards/card-1-desktop@2x.jpg 2x" width="316" height="462">
               <source media="(min-width: 768px)"
@@ -96,6 +102,12 @@
         <li class="catalog__item card">
           <a class="card__image-link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)"
+                srcset="img/cards/card-2-desktop.webp 1x, img/cards/card-2-desktop@2x.webp 2x" width="316" height="462">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/cards/card-2-tablet.webp 1x, img/cards/card-2-tablet@2x.webp 2x" width="334" height="334">
+              <source type="image/webp" srcset="img/cards/card-2-mobile.webp 1x, img/cards/card-2-mobile@2x.webp 2x"
+                width="260" height="195">
               <source media="(min-width: 1150px)"
                 srcset="img/cards/card-2-desktop.jpg 1x, img/cards/card-2-desktop@2x.jpg 2x" width="316" height="462">
               <source media="(min-width: 768px)"
@@ -122,6 +134,12 @@
         <li class="catalog__item card">
           <a class="card__image-link" href="#">
             <picture>
+              <source type="image/webp" media="(min-width: 1150px)"
+                srcset="img/cards/card-3-desktop.webp 1x, img/cards/card-3-desktop@2x.webp 2x" width="316" height="462">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/cards/card-3-tablet.webp 1x, img/cards/card-3-tablet@2x.webp 2x" width="334" height="334">
+              <source type="image/webp" srcset="img/cards/card-3-mobile.webp 1x, img/cards/card-3-mobile@2x.webp 2x"
+                width="260" height="195">
               <source media="(min-width: 1150px)"
                 srcset="img/cards/card-3-desktop.jpg 1x, img/cards/card-3-desktop@2x.jpg 2x" width="316" height="462">
               <source media="(min-width: 768px)"
@@ -152,6 +170,15 @@
       <div class="manufacturing__video video">
         <a class="video__link" href="#">
           <picture>
+            <source type="image/webp" media="(min-width: 1150px)"
+              srcset="img/manufacturing/video-desktop.webp 1x, img/manufacturing/video-desktop@2x.webp 2x"
+              width="682.65" height="455">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/manufacturing/video-tablet.webp 1x, img/manufacturing/video-tablet@2x.webp 2x" width="668"
+              height="455">
+            <source type="image/webp"
+              srcset="img/manufacturing/video-mobile.webp 1x, img/manufacturing/video-mobile@2x.webp 2x" width="260"
+              height="150">
             <source media="(min-width: 1150px)"
               srcset="img/manufacturing/video-desktop.jpg 1x, img/manufacturing/video-desktop@2x.jpg 2x" width="682.65"
               height="455">

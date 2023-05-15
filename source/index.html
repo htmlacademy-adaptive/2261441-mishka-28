@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
@@ -101,8 +101,7 @@
         </div>
         <div class="detailed-card__image-container">
           <picture>
-
-            <source type="image/webp" media="(min-width: 1200px)"
+            <source type="image/webp" media="(min-width: 1150px)"
               srcset="img/detailed-card/triple-set-desktop.webp 1x, img/detailed-card/triple-set-desktop@2x.webp 2x"
               width="525" height="636">
             <source type="image/webp" media="(min-width: 768px)"
@@ -111,7 +110,6 @@
             <source type="image/webp"
               srcset="img/detailed-card/triple-set-mobile.webp 1x, img/detailed-card/triple-set-mobile@2x.webp 2x"
               width="260" height="315">
-
             <source media="(min-width: 1150px)"
               srcset="img/detailed-card/triple-set-desktop.jpg 1x, img/detailed-card/triple-set-desktop@2x.jpg 2x"
               width="525" height="636">
@@ -218,6 +216,12 @@
           width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">Магазин 'Мишка' на карте Санкт-Петербурга.</iframe>
         <picture>
+          <source type="image/webp" media="(min-width: 1150px)"
+            srcset="img/contacts/map-desktop.webp 1x, img/contacts/map-desktop@2x.webp 2x" width="527" height="457">
+          <source type="image/webp" media="(min-width: 768px)"
+            srcset="img/contacts/map-tablet.webp 1x, img/contacts/map-tablet@2x.webp 2x" width="768" height="457">
+          <source type="image/webp" srcset="img/contacts/map-mobile.webp 1x, img/contacts/map-mobile@2x.webp 2x"
+            width="320" height="455">
           <source media="(min-width: 1150px)"
             srcset="img/contacts/map-desktop.jpg 1x, img/contacts/map-desktop@2x.jpg 2x" width="527" height="457">
           <source media="(min-width: 768px)" srcset="img/contacts/map-tablet.jpg 1x, img/contacts/map-tablet@2x.jpg 2x"
