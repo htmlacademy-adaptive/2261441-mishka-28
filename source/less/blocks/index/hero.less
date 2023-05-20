@@ -124,6 +124,26 @@
     }
   }
 
+  &--interior:hover {
+    box-shadow: 0 -5px @green;
+    padding-top: 20px;
+
+    &::after {
+      top: 18px;
+      opacity: 0.7;
+
+      @media (min-width: @tablet-width) {
+        top: 25px;
+      }
+    }
+  }
+
+  &--interior:active {
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
   &--toys {
     background-color: @dark-green;
 
@@ -148,9 +168,39 @@
 
       @media (min-width: @desktop-width) {
         top: 31px;
-        right: 33px;
+        right: 35px;
       }
     }
   }
+
+  &--toys:hover {
+    box-shadow: 0 -5px @dark-green;
+    padding-top: 20px;
+
+    &::after {
+      top: 16px;
+      opacity: 0.7;
+
+      @media (min-width: @tablet-width) {
+        top: 26px;
+      }
+    }
+  }
+
+  &--toys:active {
+    &::after {
+      opacity: 0.3;
+    }
+  }
 }
+
+// .hero__link--interior:hover {
+//   box-shadow: 0 -5px @green;
+//   padding-top: 20px;
+
+//   &::after {
+//     top: 16px;
+//     opacity: 0.7;
+//   }
+// }
 

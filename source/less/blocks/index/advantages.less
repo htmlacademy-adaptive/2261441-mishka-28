@@ -22,6 +22,7 @@
 
   @media (min-width: @tablet-width) {
     column-count: 2;
+    column-gap: 0;
   }
 }
 
@@ -29,6 +30,7 @@
   .list-item-reset;
   .text(17px, 20px, 700);
   padding-top: 83px;
+  position: relative;
 
   @media (min-width: @tablet-width) {
     .text(20px, 22px, 700);
@@ -36,68 +38,128 @@
   }
 
   &--eco-friendly {
-    background-image: url("../img/stack.svg#eco-friendly");
-    background-size: 33px 38px;
-    background-repeat: no-repeat;
-    background-position: 8px 29px;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 33px;
+      height: 38px;
+      left: 8px;
+      top: 29px;
+      background-image: url("../img/stack.svg#eco-friendly");
+      background-size: 33px 38px;
+      background-repeat: no-repeat;
+      background-position: center;
 
-    @media (min-width: @tablet-width) {
-      background-position: 8px 54px;
+      @media (min-width: @tablet-width) {
+        left: 8px;
+        top: 54px;
+      }
     }
   }
 
   &--scandinavian-style {
-    background-image: url("../img/stack.svg#scandinavian-style");
-    background-size: 47px 27px;
-    background-repeat: no-repeat;
-    background-position: 0 30px;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 47px;
+      height: 27px;
+      left: 0;
+      top: 30px;
+      background-image: url("../img/stack.svg#scandinavian-style");
+      background-size: 47px 27px;
+      background-repeat: no-repeat;
+      background-position: center;
 
-    @media (min-width: @tablet-width) {
-      background-position: -1px 57px;
+      @media (min-width: @tablet-width) {
+        left: -1px;
+        top: 57px;
+      }
     }
   }
 
   &--likes {
-    background-image: url("../img/stack.svg#likes");
-    background-size: 34px 27px;
-    background-repeat: no-repeat;
-    background-position: 7px 35px;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 34px;
+      height: 27px;
+      left: 7px;
+      top: 35px;
+      background-image: url("../img/stack.svg#likes");
+      background-size: 34px 27px;
+      background-repeat: no-repeat;
+      background-position: center;
 
-    @media (min-width: @tablet-width) {
-      background-position: 8px 63px;
+      @media (min-width: @tablet-width) {
+        left: 8px;
+        top: 63px;
+      }
     }
   }
 
   &--hand-made {
-    background-image: url("../img/stack.svg#hand-made");
-    background-size: 35px 34px;
-    background-repeat: no-repeat;
-    background-position: 3px 32px;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 35px;
+      height: 34px;
+      left: 3px;
+      top: 32px;
+      background-image: url("../img/stack.svg#hand-made");
+      background-size: 35px 34px;
+      background-repeat: no-repeat;
+      background-position: center;
 
-    @media (min-width: @tablet-width) {
-      background-position: 2px 58px;
+      @media (min-width: @tablet-width) {
+        left: 2px;
+        top: 58px;
+      }
     }
   }
 
   &--domestic-product {
-    background-image: url("../img/stack.svg#domestic-product");
-    background-size: 55px 23px;
-    background-repeat: no-repeat;
-    background-position: -6px 33px;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 55px;
+      height: 23px;
+      left: -6px;
+      top: 33px;
+      background-image: url("../img/stack.svg#domestic-product");
+      background-size: 55px 23px;
+      background-repeat: no-repeat;
+      background-position: center;
 
-    @media (min-width: @tablet-width) {
-      background-position: -10px 59px;
+      @media (min-width: @tablet-width) {
+        left: -10px;
+        top: 59px;
+      }
     }
   }
 
   &--gift-wrapped {
-    background-image: url("../img/stack.svg#gift-wrapped");
-    background-size: 33px 32px;
-    background-repeat: no-repeat;
-    background-position: 3px 32px;
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 33px;
+      height: 32px;
+      left: 3px;
+      top: 32px;
+      background-image: url("../img/stack.svg#gift-wrapped");
+      background-size: 33px 32px;
+      background-repeat: no-repeat;
+      background-position: center;
 
-    @media (min-width: @tablet-width) {
-      background-position: 2px 58px;
+      @media (min-width: @tablet-width) {
+        left: 2px;
+        top: 58px;
+      }
     }
   }
 }

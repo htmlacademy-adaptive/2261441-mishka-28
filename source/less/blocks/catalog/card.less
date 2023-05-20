@@ -1,5 +1,17 @@
 .card {
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  &:hover {
+    .card__content {
+      box-shadow: 0 6px 10px 0 fade(@black, 10%);
+    }
+  }
+
+  &:active {
+    .card__content {
+      box-shadow: 0 3px 5px 0 fade(@black, 10%);
+    }
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -20,7 +32,7 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
     padding: 27px 34px;
     min-height: 334px;
   }
@@ -32,6 +44,14 @@
 
 .card__title-link {
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__title {
@@ -62,14 +82,24 @@
 }
 
 .card__button {
+  cursor: pointer;
   width: 44px;
   height: 44px;
   border: none;
   mask-image: url("../img/stack.svg#cart");
   mask-repeat: no-repeat;
-  mask-position: center top 20px;
+  mask-position: left 22px top 22px;
   background-color: @black;
   opacity: 0.2;
   mask-size: 21px 18px;
+
+  &:hover {
+    background-color: @green;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 

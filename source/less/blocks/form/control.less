@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  cursor: pointer;
 
   &--name {
     @media (max-width: @mobile-width-only) {
@@ -10,51 +11,28 @@
     }
   }
 
-  &--phone {
-    &::after {
-      content: "";
-      display: block;
-      width: 25px;
-      height: 24px;
-      position: absolute;
-      top: 11px;
-      right: 7px;
-      mask-image: url("../img/stack.svg#phone");
-      mask-size: 25px 24px;
-      background-color: @black;
-      opacity: 0.2;
+  &:hover {
+    .control__mark {
+      border-color: @active-green;
+    }
 
-      @media (min-width: @tablet-width) {
-        right: 26px;
-      }
+    .control__input {
+      border-color: @active-green;
+    }
 
-      @media (min-width: @desktop-width) {
-        right: 8px;
-      }
+    .control__input-icon {
+      color: @active-green;
+      opacity: 1;
     }
   }
 
-  &--mail {
-    &::after {
-      content: "";
-      display: block;
-      width: 32px;
-      height: 21px;
-      position: absolute;
-      top: 16px;
-      right: 3px;
-      mask-image: url("../img/stack.svg#mail");
-      mask-size: 32px 21px;
-      background-color: @black;
-      opacity: 0.2;
+  &:active {
+    .control__mark {
+      border-color: fade(@brown, 30%);
+    }
 
-      @media (min-width: @tablet-width) {
-        right: 22px;
-      }
-
-      @media (min-width: @desktop-width) {
-        right: 4px;
-      }
+    .control__input {
+      border-color: @active-green;
     }
   }
 }
@@ -77,6 +55,15 @@
   border: none;
   background-color: transparent;
   border-bottom: 2px solid @black;
+
+  &:not(:placeholder-shown) {
+    border-color: @active-green;
+  }
+
+  &:not(:placeholder-shown) ~ .control__input-icon {
+    color: @active-green;
+    opacity: 1;
+  }
 
   @media (max-width: @mobile-width-only) {
     padding-left: 0;
@@ -102,7 +89,7 @@
     content: "";
     width: 23.22px;
     height: 16.08px;
-    background-image: url("../img/order/tick.svg");
+    background-image: url("../img/stack.svg#tick");
     background-size: contain;
     position: absolute;
     left: calc(20.37% - 1px);
@@ -134,6 +121,39 @@
     font-size: 19px;
   }
 }
+
+.control__input-icon {
+  position: absolute;
+  opacity: 0.2;
+  cursor: default;
+
+  &--phone {
+    top: 11px;
+    right: 7px;
+
+    @media (min-width: @tablet-width) {
+      right: 26px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 8px;
+    }
+  }
+
+  &--mail {
+    top: 16px;
+    right: 3px;
+
+    @media (min-width: @tablet-width) {
+      right: 22px;
+    }
+
+    @media (min-width: @desktop-width) {
+      right: 4px;
+    }
+  }
+}
+
 
 .control__mark {
   position: relative;
