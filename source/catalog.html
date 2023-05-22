@@ -4,7 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Каталог готовых изделий ручной вязки. Милые детские игрушки и предметы интерьера." />
   <title>HTML Academy: Мишка</title>
+  <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -16,7 +20,7 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <nav class="main-header__navigation navigation navigation--closed navigation--nojs">
-        <a class="navigation__logo header-logo" href="index.html" title="На главную">
+        <a class="navigation__logo navigation__logo--link header-logo" href="index.html" title="На главную">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo.svg#mishka-desktop" width="149" height="72">
             <source media="(min-width: 768px)" srcset="img/logo.svg#mishka-tablet" width="114" height="46">
@@ -262,7 +266,7 @@
     </div>
   </div>
 
-  <script src="js/app.js"></script>
+  <script src="js/burger.js" defer></script>
 </body>
 
 </html>
