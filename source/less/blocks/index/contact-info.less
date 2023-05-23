@@ -10,15 +10,27 @@
 
 .contact-info__label {
   .text-reset;
-  width: 80px;
+  width: 75px;
   padding-right: 10px;
   flex-shrink: 0;
+
+  @media (min-width: @tablet-width) {
+    width: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 78px;
+  }
 }
 
 .contact-info__email-link {
   .link-reset;
   color: @brown;
-  width: 250px;
+  width: 183px;
+
+  @media (min-width: @tablet-width) {
+    width: 250px;
+  }
 
   @media (min-width: @desktop-width) {
     width: 240px;
@@ -57,6 +69,10 @@
 
     @media (min-width: @tablet-width) {
       bottom: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      bottom: -3px;
     }
   }
 }

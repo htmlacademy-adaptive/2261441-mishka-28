@@ -95,6 +95,13 @@
     0 12px 0 0 fade(#231f20, 60%);
 }
 
+.navigation--closed .navigation__toggle:active::before {
+  background-color: fade(#231f20, 30%);
+  box-shadow:
+    0 6px 0 0 fade(#231f20, 30%),
+    0 12px 0 0 fade(#231f20, 30%);
+}
+
 .navigation--opened .navigation__toggle {
   &::before,
   &::after {
@@ -119,6 +126,11 @@
   &:hover::before,
   &:hover::after {
     background-color: fade(@black, 60%);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade(@black, 30%);
   }
 }
 
@@ -147,7 +159,7 @@
 }
 
 .navigation__link {
-  padding: 20px;
+  padding: 25px;
 
   &:hover {
     opacity: 0.6;
