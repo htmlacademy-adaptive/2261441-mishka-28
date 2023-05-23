@@ -23,27 +23,39 @@
 
 .card__image {
   display: block;
+  margin: 0;
 }
 
 .card__content {
   min-height: 179px;
   border: 1px solid @light-grey;
-  padding: 27px;
-  display: flex;
-  flex-direction: column;
+  padding: 0 27px;
 
-  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
-    padding: 27px 34px;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 32px;
     min-height: 334px;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 197px;
+    padding: 0 26.5px;
   }
 }
 
+.card__info {
+  padding-top: 26px;
+}
+
 .card__title-link {
-  text-decoration: none;
+  .link-reset;
+  margin-bottom: 9px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 6px;
+  }
 
   &:hover {
     opacity: 0.6;
@@ -54,20 +66,22 @@
   }
 }
 
-.card__title {
-  margin-bottom: 6px;
-}
-
 .card__text {
-  margin-bottom: 12px;
+  flex-shrink: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 11px;
+  }
 }
 
 .card__price-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  min-height: 46px;
+  min-height: 73px;
   border-top: 1px solid @light-grey;
+  padding-bottom: 26px;
   margin-bottom: 0;
   margin-top: auto;
 }
@@ -92,6 +106,10 @@
   background-color: @black;
   opacity: 0.2;
   mask-size: 21px 18px;
+
+  @media (min-width: @desktop-width) {
+    mask-position: left 18px top 22px;
+  }
 
   &:hover {
     background-color: @green;

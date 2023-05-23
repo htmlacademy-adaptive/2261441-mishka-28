@@ -34,6 +34,18 @@
       padding-bottom: 50px;
     }
   }
+
+  &--textarea {
+    margin-bottom: 18px;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      margin-bottom: -3px;
+    }
+  }
 }
 
 .order-form__fieldset-container {
@@ -111,8 +123,8 @@
 
   &--checkbox {
     @media (max-width: @mobile-width-only) {
-      padding-top: 25px;
-      padding-bottom: 25px;
+      padding-top: 21px;
+      padding-bottom: 32px;
       row-gap: 23px;
     }
   }
@@ -131,6 +143,16 @@
       grid-column: 2/-1;
     }
   }
+
+  &--bio {
+    row-gap: 21px;
+    padding-bottom: 32px;
+
+    @media (min-width: @tablet-width) {
+      row-gap: 23px;
+      padding-bottom: 1px;
+    }
+  }
 }
 
 .order-form__control {
@@ -139,7 +161,7 @@
 
 .order-form__input-wrapper {
   @media (max-width: @mobile-width-only) {
-    padding-top: 22px;
+    padding-top: 7px;
   }
 
   @media (min-width: @tablet-width) {
@@ -148,6 +170,14 @@
 
   @media (min-width: @desktop-width) {
     grid-column: 2/-2;
+  }
+
+  &--textarea {
+    padding-top: 22px;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 0;
+    }
   }
 }
 
@@ -181,9 +211,11 @@
 .order-form__button {
   .text(17px, 16px, 700, @brown);
   width: 100%;
+  margin-top: -1px;
 
   @media (min-width: @tablet-width) {
     width: 230px;
     order: -1;
+    margin-top: 3px;
   }
 }
