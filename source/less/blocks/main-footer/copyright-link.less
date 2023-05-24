@@ -1,11 +1,16 @@
 .copyright-link {
   text-decoration: none;
   color: @green;
-  width: 183px;
+  min-width: 183px;
+  max-width: 210px;
   min-height: 35px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    margin-top: -5px;
+  }
 
   &:hover {
     color: #46c1ae;
@@ -17,5 +22,22 @@
 }
 
 .copyright-link__text {
+  .text-reset;
   .text(19px, 18px, 700);
+  margin-top: -2px;
+
+  @media (min-width: @tablet-width) {
+    margin-left: 2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-left: -2px;
+  }
 }
+
+.copyright-link__logo {
+  flex-shrink: 0;
+  width: 27px;
+  height: 35px;
+}
+

@@ -4,7 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Каталог готовых изделий ручной вязки. Милые детские игрушки и предметы интерьера." />
   <title>HTML Academy: Мишка</title>
+  <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -16,11 +20,12 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <nav class="main-header__navigation navigation navigation--closed navigation--nojs">
-        <a class="navigation__logo navigation__link header-logo" href="index.html" title="На главную">
+        <a class="navigation__logo navigation__logo--link" href="index.html" title="На главную">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo.svg#mishka-desktop" width="149" height="72">
             <source media="(min-width: 768px)" srcset="img/logo.svg#mishka-tablet" width="114" height="46">
-            <img src="img/logo.svg#mishka-mobile" width="86" height="35" alt="Логотип магазина 'Мишка'.">
+            <img class="header-logo" src="img/logo.svg#mishka-mobile" width="86" height="35"
+              alt="Логотип магазина 'Мишка'.">
           </picture>
         </a>
         <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
@@ -41,13 +46,13 @@
           </li>
         </ul>
         <ul class="navigation__list user-list">
-          <li class="navigation__item user-list__item--search">
+          <li class="navigation__item user-list__item user-list__item--search">
             <a class="navigation__link user-list__link user-list__link--search" href="#">
               <span class="navigation__link-text user-list__link-text user-list__link-text--search">Поиск по
                 сайту</span>
             </a>
           </li>
-          <li class="navigation__item user-list__item--cart">
+          <li class="navigation__item user-list__item user-list__item--cart">
             <a class="navigation__link user-list__link user-list__link--cart" href="#">
               <span class="navigation__link-text user-list__link-text user-list__link-text--cart">Корзина: <span
                   class="cart-content">пока
@@ -86,17 +91,18 @@
             </picture>
           </a>
           <div class="card__content">
-            <a class="card__title-link" href="#">
-              <h3 class="card__title catalog-header">Зайчик-попрыгайчик</h3>
-            </a>
-            <p class="card__text catalog-text">Рост 30 см, вес 200 г</p>
+            <div class="card__info">
+              <a class="card__title-link" href="#">
+                <h3 class="card__title catalog-header">Зайчик-попрыгайчик</h3>
+              </a>
+              <p class="card__text catalog-text">Рост 30 см, вес 200 г</p>
+            </div>
             <div class="card__price-wrapper">
               <p class="card__price">1 200 руб.</p>
-              <button class="card__button" type="button">
+              <button class="card__button order-button" type="button">
                 <span class="visually-hidden">Заказать</span>
               </button>
             </div>
-
           </div>
         </li>
         <li class="catalog__item card">
@@ -117,18 +123,19 @@
             </picture>
           </a>
           <div class="card__content">
-            <a class="card__title-link" href="#">
-              <h3 class="card__title catalog-header">Корзинка для белья</h3>
-            </a>
-            <p class="card__text catalog-text">Диаметр 15 см, высота 10 см</p>
+            <div class="card__info">
+              <a class="card__title-link" href="#">
+                <h3 class="card__title catalog-header">Корзинка для белья</h3>
+              </a>
+              <p class="card__text catalog-text">Диаметр 15 см, высота 10 см</p>
+            </div>
             <div class="card__price-wrapper">
               <p class="card__price">690 руб.</p>
-              <button class="card__button" type="button">
+              <button class="card__button order-button" type="button">
                 <span class="visually-hidden">Заказать</span>
                 </svg>
               </button>
             </div>
-
           </div>
         </li>
         <li class="catalog__item card">
@@ -149,13 +156,15 @@
             </picture>
           </a>
           <div class="card__content">
-            <a class="card__title-link" href="#">
-              <h3 class="card__title catalog-header">Большая корзинка <br> для игрушек</h3>
-            </a>
-            <p class="card__text catalog-text">Диаметр 30 см, высота 30 см</p>
+            <div class="card__info">
+              <a class="card__title-link" href="#">
+                <h3 class="card__title catalog-header">Большая корзинка <br> для игрушек</h3>
+              </a>
+              <p class="card__text catalog-text">Диаметр 30 см, высота 30 см</p>
+            </div>
             <div class="card__price-wrapper">
               <p class="card__price">1 500 руб.</p>
-              <button class="card__button" type="button">
+              <button class="card__button order-button" type="button">
                 <span class="visually-hidden">Заказать</span>
               </button>
             </div>
@@ -171,8 +180,8 @@
         <a class="video__link" href="#">
           <picture>
             <source type="image/webp" media="(min-width: 1150px)"
-              srcset="img/manufacturing/video-desktop.webp 1x, img/manufacturing/video-desktop@2x.webp 2x"
-              width="682.65" height="455">
+              srcset="img/manufacturing/video-desktop.webp 1x, img/manufacturing/video-desktop@2x.webp 2x" width="683"
+              height="455">
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/manufacturing/video-tablet.webp 1x, img/manufacturing/video-tablet@2x.webp 2x" width="668"
               height="455">
@@ -180,7 +189,7 @@
               srcset="img/manufacturing/video-mobile.webp 1x, img/manufacturing/video-mobile@2x.webp 2x" width="260"
               height="150">
             <source media="(min-width: 1150px)"
-              srcset="img/manufacturing/video-desktop.jpg 1x, img/manufacturing/video-desktop@2x.jpg 2x" width="682.65"
+              srcset="img/manufacturing/video-desktop.jpg 1x, img/manufacturing/video-desktop@2x.jpg 2x" width="683"
               height="455">
             <source media="(min-width: 768px)"
               srcset="img/manufacturing/video-tablet.jpg 1x, img/manufacturing/video-tablet@2x.jpg 2x" width="668"
@@ -194,10 +203,10 @@
         </button>
       </div>
       <div class="manufacturing__content">
-        <p class="manufacturing__text catalog-text">По просьбам наших любимых фолловеров мы сняли для вас подробное
+        <p class="manufacturing__text">По просьбам наших любимых фолловеров мы сняли для вас подробное
           видео о том, как
           появляются наши товары.</p>
-        <a class="manufacturing__link button" href="form.html">Сделать заказ</a>
+        <a class="manufacturing__link button button--big" href="form.html">Сделать заказ</a>
       </div>
     </section>
   </main>
@@ -262,7 +271,8 @@
     </div>
   </div>
 
-  <script src="js/app.js"></script>
+  <script src="js/burger.js" defer></script>
+  <script src="js/modal.js" defer></script>
 </body>
 
 </html>

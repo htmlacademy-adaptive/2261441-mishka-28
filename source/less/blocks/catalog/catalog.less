@@ -9,8 +9,11 @@
   }
 
   @media (min-width: @desktop-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    // gap: 51px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
     gap: 51px;
   }
 }

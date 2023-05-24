@@ -3,7 +3,7 @@
 }
 
 .main-container__hero {
-  margin-bottom: 28px;
+  margin-bottom: 31px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 51.5px;
@@ -80,19 +80,15 @@
       width: 100%;
       height: 24px;
       bottom: -12px;
-      background-image: url("../img/zigzag-fill-tablet.svg");
+      background-image: url("../img/stack.svg#zigzag-fill-tablet");
       background-repeat: repeat-x;
       background-position: center;
+      background-size: 768px 24px;
     }
 
     @media (min-width: @desktop-width) {
-      width: 100%;
       height: 34px;
       bottom: -17px;
-      background-image: url("../img/zigzag-fill-tablet.svg");
-      background-repeat: repeat-x;
-      background-position: center;
-      background-size: contain;
     }
   }
 
@@ -104,7 +100,14 @@
     }
 
     @media (min-width: @desktop-width) {
-      margin-bottom: 128px;
+      margin-bottom: 127px;
+
+      &::after {
+        background-image: url("../img/stack.svg#zigzag-fill-catalog");
+        background-repeat: repeat-x;
+        background-position: center;
+        background-size: 1150px 34px;
+      }
     }
   }
 
@@ -118,6 +121,13 @@
 
     @media (min-width: @desktop-width) {
       margin-bottom: 115.5px;
+
+      &::after {
+        background-image: url("../img/stack.svg#zigzag-fill-form");
+        background-repeat: repeat-x;
+        background-position: center;
+        background-size: 1150px 34px;
+      }
     }
   }
 
@@ -131,7 +141,7 @@
 }
 
 .main-container__catalog {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 53px;
@@ -150,7 +160,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 105px;
+    margin-bottom: 103px;
   }
 }
 

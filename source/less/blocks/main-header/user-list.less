@@ -8,6 +8,7 @@
   @media (min-width: @desktop-width) {
     order: 3;
     width: 404px;
+    align-self: start;
     justify-content: right;
   }
 }
@@ -46,16 +47,26 @@
       height: 18px;
       position: absolute;
       left: 2px;
-      top: 10px;
+      top: 30px;
 
       @media (min-width: @tablet-width) {
         position: static;
+        display: block;
       }
     }
   }
 
   &--cart {
     padding-left: 46px;
+
+    @media (min-width: @tablet-width) {
+      padding-right: 0;
+      padding-left: 51px;
+    }
+
+    @media (min-width: @tablet-width) {
+      padding-left: 53px;
+    }
 
     &::before {
       content: "";
@@ -66,8 +77,9 @@
       width: 21px;
       height: 18px;
       position: absolute;
-      top: 10px;
+      top: 50%;
       left: 0;
+      transform: translateY(-50%);
     }
   }
 
@@ -84,7 +96,16 @@
 
   &--search {
     @media (min-width: @tablet-width) {
-      display: none;
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: nowrap;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
     }
   }
 }

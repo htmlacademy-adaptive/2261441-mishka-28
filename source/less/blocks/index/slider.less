@@ -18,29 +18,59 @@
     min-width: 175px;
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: -35px;
   }
 }
 
 .slider__button {
+  position: relative;
   flex-grow: 1;
   border: 1px solid @light-grey;
+  padding: 13px 42px 13px 37px;
 
   &--previous {
-    background-image: url("../img/stack.svg#arrow-left");
-    background-size: 50px 26px;
-    background-repeat: no-repeat;
-    background-position: center;
+    border-right: none;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: url("../img/stack.svg#arrow-left");
+      background-size: 50px 26px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
 
-  &--next {
+  &--next::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
     background-image: url("../img/stack.svg#arrow-right");
     background-size: 50px 26px;
     background-repeat: no-repeat;
     background-position: center;
   }
 
+  &:hover {
+    background-color: @white;
+
+    &::after {
+      opacity: 0.6;
+    }
+  }
+
+  &:active {
+    &::after {
+      opacity: 0.3;
+    }
+  }
+
   @media (min-width: @tablet-width) {
     border: none;
+    padding-left: 18px;
+    padding-right: 18px;
   }
 }

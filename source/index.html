@@ -4,7 +4,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Милые детские игрушки и предметы интерьера ручной вязки. Большой выбор готовых изделий или изготовление под заказ." />
   <title>HTML Academy: Мишка</title>
+  <link rel="preload" href="fonts/opensans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
@@ -16,11 +20,12 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <nav class="main-header__navigation navigation navigation--closed navigation--nojs">
-        <a class="navigation__logo header-logo">
+        <a class="navigation__logo" href="#">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo.svg#mishka-desktop" width="149" height="72">
             <source media="(min-width: 768px)" srcset="img/logo.svg#mishka-tablet" width="114" height="46">
-            <img src="img/logo.svg#mishka-mobile" width="86" height="35" alt="Логотип магазина 'Мишка'.">
+            <img class="header-logo" src="img/logo.svg#mishka-mobile" width="86" height="35"
+              alt="Логотип магазина 'Мишка'.">
           </picture>
         </a>
         <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
@@ -41,13 +46,13 @@
           </li>
         </ul>
         <ul class="navigation__list user-list">
-          <li class="navigation__item user-list__item--search">
+          <li class="navigation__item user-list__item user-list__item--search">
             <a class="navigation__link user-list__link user-list__link--search" href="#">
               <span class="navigation__link-text user-list__link-text user-list__link-text--search">Поиск по
                 сайту</span>
             </a>
           </li>
-          <li class="navigation__item user-list__item--cart">
+          <li class="navigation__item user-list__item user-list__item--cart">
             <a class="navigation__link user-list__link user-list__link--cart" href="#">
               <span class="navigation__link-text user-list__link-text user-list__link-text--cart">Корзина: <span
                   class="cart-content">пока
@@ -117,7 +122,7 @@
               srcset="img/detailed-card/triple-set-tablet.jpg 1x, img/detailed-card/triple-set-tablet@2x.jpg 2x"
               width="334" height="404">
             <img class="detailed-card__image" src="img/detailed-card/triple-set-mobile.jpg" width="260" height="315"
-              srcset="img/detailed-card/triple-set-mobile@2x.jpg 2x" alt="Три вязаных корзиночки.">
+              srcset="img/detailed-card/triple-set-mobile@2x.jpg 2x" loading="lazy" alt="Три вязаных корзиночки.">
           </picture>
         </div>
         <div class="detailed-card__content">
@@ -133,12 +138,13 @@
         <p class="advantages__intro index-lead">Коротко о нас:</p>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--eco-friendly">Экологически <br> чистые материалы</li>
-          <li class="advantages__item advantages__item--scandinavian-style">Скандинавский стиль по российской цене
+          <li class="advantages__item advantages__item--scandinavian-style">Скандинавский стиль по&nbsp;российской цене
           </li>
-          <li class="advantages__item advantages__item--likes">Увеличивает лайки на фотографиях</li>
-          <li class="advantages__item advantages__item--hand-made">Связано вручную с любовью и умилением</li>
+          <li class="advantages__item advantages__item--likes">Увеличивает лайки на&nbsp;фотографиях</li>
+          <li class="advantages__item advantages__item--hand-made">Связано вручную с&nbsp;любовью&nbsp;и&nbsp;умилением
+          </li>
           <li class="advantages__item advantages__item--domestic-product">Поддержка отечественного производителя</li>
-          <li class="advantages__item advantages__item--gift-wrapped">Поставляется в подарочной упаковке</li>
+          <li class="advantages__item advantages__item--gift-wrapped">Поставляется в&nbsp;подарочной&nbsp;упаковке</li>
         </ul>
       </div>
     </section>
@@ -152,13 +158,13 @@
               <blockquote class="review">
                 <p class="review__text index-text index-text--review">Я молодая мама, но всё равно фотографии не
                   набирали и близко такого количества
-                  лайков, как у популярных
+                  лайков, как у&nbsp;популярных
                   инстамамочек.
-                  В отчаянии, я накупила аксессуаров и игрушек в Мишке,
-                  и мои фотографии сразу стали более стильными, а также набирают больше лайков!
+                  В&nbsp;отчаянии, я накупила аксессуаров и игрушек в Мишке,
+                  и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!
                 </p>
-                <p class="review__author-name">Анастасия Красильникова<br><cite
-                    class="review__author-email">@misssssiskras</cite></p>
+                <p class="review__author-name">Анастасия Красильникова</p>
+                <p class="review__author-email">@misssssiskras</p>
               </blockquote>
             </li>
             <li class="customer-reviews__item slider__item">
@@ -169,8 +175,8 @@
                   и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
                   больше лайков!
                 </p>
-                <p class="review__author-name">Екатерина Красильникова<br><cite
-                    class="review__author-email">@misssssiskras2</cite></p>
+                <p class="review__author-name">Екатерина Красильникова</p>
+                <p class="review__author-email">@misssssiskras2</p>
               </blockquote>
             </li>
             <li class="customer-reviews__item slider__item">
@@ -191,8 +197,7 @@
             <button class="slider__button slider__button--previous button" type="button"><span
                 class="visually-hidden">Предыдущий отзыв.</span></button>
             <button class="slider__button slider__button--next button" type="button"><span
-                class="visually-hidden">Следующий
-                отзыв.</span></button>
+                class="visually-hidden">Следующий отзыв.</span></button>
           </div>
         </div>
         <a class="customer-reviews__link button" href="#">Написать</a>
@@ -214,7 +219,7 @@
         <iframe class="contacts__map contacts__map--nojs"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4618.015193540775!2d30.318885068805756!3d59.939933482942195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1682490672614!5m2!1sru!2sru"
           width="600" height="450" style="border: 0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">Магазин 'Мишка' на карте Санкт-Петербурга.</iframe>
+          referrerpolicy="no-referrer-when-downgrade" title="Магазин 'Мишка' на карте Санкт-Петербурга."></iframe>
         <picture>
           <source type="image/webp" media="(min-width: 1150px)"
             srcset="img/contacts/map-desktop.webp 1x, img/contacts/map-desktop@2x.webp 2x" width="527" height="457">
@@ -227,7 +232,8 @@
           <source media="(min-width: 768px)" srcset="img/contacts/map-tablet.jpg 1x, img/contacts/map-tablet@2x.jpg 2x"
             width="768" height="457">
           <img class="contacts__map-image contacts__map-image--nojs" src="img/contacts/map-mobile.jpg" width="320"
-            height="455" srcset="img/contacts/map-mobile@2x.jpg 2x" alt="Магазин 'Мишка' на карте Санкт-Петербурга.">
+            height="455" srcset="img/contacts/map-mobile@2x.jpg 2x" loading="lazy"
+            alt="Магазин 'Мишка' на карте Санкт-Петербурга.">
         </picture>
       </div>
 
@@ -239,7 +245,7 @@
     <div class="main-footer__container container">
       <a class="main-footer__logo footer-logo" href="index.html" title="На главную">
         <span class="visually-hidden">Переход на главную страницу.</span>
-        <svg class="footer-logo__icon" aria-hidden="true" focusable="false" width="102" height="34">
+        <svg aria-hidden="true" focusable="false" width="102" height="34">
           <use href="img/logo.svg#mishka-footer"></use>
         </svg>
       </a>
@@ -279,23 +285,25 @@
         <div class="modal__radio-group">
           <label class="modal__control modal-control">
             <input class="visually-hidden modal-control__input" type="radio" name="size" value="S" checked>
-            <span class="modal-control__label button">S</span>
+            <span class="modal-control__label">S</span>
           </label>
           <label class="modal__control modal-control">
             <input class="visually-hidden modal-control__input" type="radio" name="size" value="M">
-            <span class="modal-control__label button">M</span>
+            <span class="modal-control__label">M</span>
           </label>
           <label class="modal__control modal-control">
             <input class="visually-hidden modal-control__input" type="radio" name="size" value="L">
-            <span class="modal-control__label button">L</span>
+            <span class="modal-control__label">L</span>
           </label>
         </div>
-        <button class="modal__button button" type="submit">Добавить</button>
+        <button class="modal__button button button--big" type="submit">Добавить</button>
       </form>
     </div>
   </div>
 
-  <script src="js/app.js"></script>
+  <script src="js/burger.js" defer></script>
+  <script src="js/map.js" defer></script>
+  <script src="js/modal.js" defer></script>
 </body>
 
 </html>

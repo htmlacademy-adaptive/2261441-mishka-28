@@ -1,53 +1,90 @@
 .card {
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  &:hover {
+    .card__content {
+      box-shadow: 0 6px 10px 0 fade(@black, 10%);
+    }
+  }
+
+  &:active {
+    .card__content {
+      box-shadow: 0 3px 5px 0 fade(@black, 10%);
+    }
+  }
+
+  @media (min-width: @tablet-width) and (max-width: @tablet-width-only) {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
     width: 316px;
   }
 }
 
 .card__image {
   display: block;
+  margin: 0;
 }
 
 .card__content {
   min-height: 179px;
   border: 1px solid @light-grey;
-  padding: 27px;
-  display: flex;
-  flex-direction: column;
+  padding: 0 27px;
 
-  @media (min-width: @tablet-width) and (max-width: @desktop-width) {
-    padding: 27px 34px;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 32px;
     min-height: 334px;
   }
 
   @media (min-width: @desktop-width) {
+    flex-grow: 1;
     min-height: 197px;
+    padding: 0 26.5px;
   }
 }
 
-.card__title-link {
-  text-decoration: none;
+.card__info {
+  padding-top: 26px;
 }
 
-.card__title {
-  margin-bottom: 6px;
+.card__title-link {
+  .link-reset;
+  margin-bottom: 9px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 6px;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__text {
-  margin-bottom: 12px;
+  flex-shrink: 0;
+  margin-bottom: 15px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 11px;
+  }
 }
 
 .card__price-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  min-height: 46px;
+  min-height: 73px;
   border-top: 1px solid @light-grey;
+  padding-bottom: 26px;
   margin-bottom: 0;
   margin-top: auto;
 }
@@ -62,14 +99,29 @@
 }
 
 .card__button {
+  cursor: pointer;
+  flex-shrink: 0;
   width: 44px;
   height: 44px;
   border: none;
   mask-image: url("../img/stack.svg#cart");
   mask-repeat: no-repeat;
-  mask-position: center top 20px;
+  mask-position: left 22px top 22px;
   background-color: @black;
   opacity: 0.2;
   mask-size: 21px 18px;
+
+  @media (min-width: @desktop-width) {
+    mask-position: left 18px top 22px;
+  }
+
+  &:hover {
+    background-color: @green;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 

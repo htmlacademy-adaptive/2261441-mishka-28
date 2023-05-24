@@ -2,15 +2,31 @@
   .text(18px, 20px, 700, @brown);
   font-family: inherit;
   font-style: normal;
+  // letter-spacing: -0.7px;
 
   display: block;
   align-items: center;
   text-align: center;
   text-transform: uppercase;
+  cursor: pointer;
 
   background-color: @white;
   border: 2px solid @brown;
 
-  padding: 14px 18px;
+  padding: 14px;
   min-height: 52px;
+
+  &--big {
+    padding: 16px;
+    letter-spacing: normal;
+  }
+
+  &:hover {
+    color: @white;
+    background-color: @brown;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+  }
 }

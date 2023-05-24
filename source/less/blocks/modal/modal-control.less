@@ -4,9 +4,32 @@
   &:checked + .modal-control__label {
     border-color: @green;
   }
+
+  &:checked:hover + .modal-control__label {
+    border-color: @green;
+  }
+
+  &:hover + .modal-control__label {
+    border-color: fade(@brown, 30%);
+  }
+
+  &:hover:active + .modal-control__label {
+    border-color: @green;
+  }
 }
 
 .modal-control__label {
   .text(17px, 16px, 700, @brown);
+  text-align: center;
+  display: block;
+  width: 82px;
+  min-height: 52px;
+  padding: 16px 20px;
   border: 2px solid rgba(68, 68, 68, 0.1);
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 112px;
+    padding: 16px 35px;
+  }
 }
