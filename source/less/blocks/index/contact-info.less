@@ -1,40 +1,27 @@
 .contact-info {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 77px 183px;
+  grid-auto-flow: dense;
   row-gap: 30px;
 
+  @media (min-width: @tablet-width) {
+    grid-template-columns: 78px 256px 78px 256px;
+  }
+
   @media (min-width: @desktop-width) {
-    padding-right: 30px;
+    grid-template-columns: 78px 250px;
   }
 }
 
 .contact-info__label {
   .text-reset;
-  width: 75px;
-  padding-right: 10px;
-  flex-shrink: 0;
-
-  @media (min-width: @tablet-width) {
-    width: 80px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 78px;
-  }
+  padding-right: 20px;
 }
 
 .contact-info__email-link {
   .link-reset;
   color: @brown;
-  width: 183px;
-
-  @media (min-width: @tablet-width) {
-    width: 250px;
-  }
-
-  @media (min-width: @desktop-width) {
-    width: 240px;
-  }
+  padding-right: 20px;
 
   &:hover,
   &:active {
@@ -79,5 +66,4 @@
 
 .contact-info__address {
   .text-reset;
-  flex-grow: 1;
 }

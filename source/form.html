@@ -20,11 +20,12 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <nav class="main-header__navigation navigation navigation--closed navigation--nojs">
-        <a class="navigation__logo navigation__logo--link header-logo" href="index.html" title="На главную">
+        <a class="navigation__logo navigation__logo--link" href="index.html" title="На главную">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo.svg#mishka-desktop" width="149" height="72">
             <source media="(min-width: 768px)" srcset="img/logo.svg#mishka-tablet" width="114" height="46">
-            <img src="img/logo.svg#mishka-mobile" width="86" height="35" alt="Логотип магазина 'Мишка'.">
+            <img class="header-logo" src="img/logo.svg#mishka-mobile" width="86" height="35"
+              alt="Логотип магазина 'Мишка'.">
           </picture>
         </a>
         <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
@@ -45,13 +46,13 @@
           </li>
         </ul>
         <ul class="navigation__list user-list">
-          <li class="navigation__item user-list__item--search">
+          <li class="navigation__item user-list__item user-list__item--search">
             <a class="navigation__link user-list__link user-list__link--search" href="#">
               <span class="navigation__link-text user-list__link-text user-list__link-text--search">Поиск по
                 сайту</span>
             </a>
           </li>
-          <li class="navigation__item user-list__item--cart">
+          <li class="navigation__item user-list__item user-list__item--cart">
             <a class="navigation__link user-list__link user-list__link--cart" href="#">
               <span class="navigation__link-text user-list__link-text user-list__link-text--cart">Корзина: <span
                   class="cart-content">пока
@@ -248,7 +249,7 @@
             </small>
           </p>
 
-          <button class="order-form__button button" type="submit">Отправить заказ</button>
+          <button class="order-form__button button button--big" type="submit">Отправить заказ</button>
         </div>
       </form>
     </section>

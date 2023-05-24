@@ -47,14 +47,6 @@
   }
 }
 
-.navigation__logo img {
-  height: 79px;
-
-  @media (min-width: @tablet-width) {
-    height: 89px;
-  }
-}
-
 .navigation__toggle {
   position: absolute;
   display: block;
@@ -182,6 +174,8 @@
   @media (min-width: @tablet-width) {
     .text(15px, 24px, @brown);
     display: block;
+    max-width: 260px;
+    text-align: right;
     background-color: transparent;
     position: relative;
     order: 4;

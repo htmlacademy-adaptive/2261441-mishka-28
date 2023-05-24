@@ -20,11 +20,12 @@
   <header class="main-header">
     <div class="main-header__wrapper">
       <nav class="main-header__navigation navigation navigation--closed navigation--nojs">
-        <a class="navigation__logo header-logo" href="#">
+        <a class="navigation__logo" href="#">
           <picture>
             <source media="(min-width: 1150px)" srcset="img/logo.svg#mishka-desktop" width="149" height="72">
             <source media="(min-width: 768px)" srcset="img/logo.svg#mishka-tablet" width="114" height="46">
-            <img src="img/logo.svg#mishka-mobile" width="86" height="35" alt="Логотип магазина 'Мишка'.">
+            <img class="header-logo" src="img/logo.svg#mishka-mobile" width="86" height="35"
+              alt="Логотип магазина 'Мишка'.">
           </picture>
         </a>
         <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
@@ -45,13 +46,13 @@
           </li>
         </ul>
         <ul class="navigation__list user-list">
-          <li class="navigation__item user-list__item--search">
+          <li class="navigation__item user-list__item user-list__item--search">
             <a class="navigation__link user-list__link user-list__link--search" href="#">
               <span class="navigation__link-text user-list__link-text user-list__link-text--search">Поиск по
                 сайту</span>
             </a>
           </li>
-          <li class="navigation__item user-list__item--cart">
+          <li class="navigation__item user-list__item user-list__item--cart">
             <a class="navigation__link user-list__link user-list__link--cart" href="#">
               <span class="navigation__link-text user-list__link-text user-list__link-text--cart">Корзина: <span
                   class="cart-content">пока
@@ -126,7 +127,7 @@
         </div>
         <div class="detailed-card__content">
           <p class="detailed-card__price">Цена: 990 руб.</p>
-          <button class="detailed-card__button button order-button" type="button">Заказать</button>
+          <button class="detailed-card__button button" type="button">Заказать</button>
         </div>
       </article>
     </section>
@@ -196,8 +197,7 @@
             <button class="slider__button slider__button--previous button" type="button"><span
                 class="visually-hidden">Предыдущий отзыв.</span></button>
             <button class="slider__button slider__button--next button" type="button"><span
-                class="visually-hidden">Следующий
-                отзыв.</span></button>
+                class="visually-hidden">Следующий отзыв.</span></button>
           </div>
         </div>
         <a class="customer-reviews__link button" href="#">Написать</a>
