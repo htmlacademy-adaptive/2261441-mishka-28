@@ -88,16 +88,16 @@
   position: relative;
   width: 100%;
   min-height: 103px;
-  padding: 24px 160px 31px 30px;
+  padding: 24px 120px 31px 30px;
 
   @media (min-width: @tablet-width) {
     .text(20px, 30px, 700, @white);
     min-height: 119px;
-    padding: 25px 167px 34px 36px;
+    padding: 25px 125px 34px 36px;
   }
 
   @media (min-width: @desktop-width) {
-    padding-right: 350px;
+    padding-right: 130px;
   }
 
   &--interior {
@@ -125,7 +125,8 @@
   }
 
   &--interior:hover {
-    box-shadow: 0 -5px @green;
+    background-color: #59d5bc;
+    box-shadow: 0 -5px #59d5bc;
     padding-top: 20px;
 
     &::after {
@@ -174,7 +175,8 @@
   }
 
   &--toys:hover {
-    box-shadow: 0 -5px @dark-green;
+    background-color: #46c1ae;
+    box-shadow: 0 -5px #46c1ae;
     padding-top: 20px;
 
     &::after {

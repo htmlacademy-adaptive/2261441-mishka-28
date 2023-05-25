@@ -85,6 +85,10 @@
     }
   }
 
+  &--radio:focus + .control__mark {
+    outline: 1px solid @black;
+  }
+
   &--checkbox:checked + .control__mark::after {
     content: "";
     width: 23.22px;
@@ -99,6 +103,10 @@
       width: 31.78px;
       height: 22px;
     }
+  }
+
+  &--checkbox:focus + .control__mark {
+    outline: 1px solid @black;
   }
 
   &--picture {
@@ -153,7 +161,6 @@
     }
   }
 }
-
 
 .control__mark {
   position: relative;
